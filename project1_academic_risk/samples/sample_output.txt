@@ -1,0 +1,615 @@
+Student ID: NTIVUNWA250
+Project: Dynamic Academic Performance and Risk Analysis Engine
+Custom Analysis: Academic Risk Index
+Loaded 15 starting student records.
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 2
+
+All students:
+ID      Name                       Course                  Grade
+1001    Chico Mugisha              Embedded C               78.5
+1002    Gisele Uwase               Embedded C               91.0
+1003    Soleil Ishimwe             Embedded C               46.5
+1004    Elina Uwimana              Data Structures          83.0
+1005    Queen Ingabire             Data Structures          67.5
+1006    Derick Habimana            Data Structures          38.0
+1007    Nina Mutoni                Linear Algebra           72.0
+1008    Bonheur Niyonzima          Linear Algebra           55.5
+1009    Consolee Mukamana          Linear Algebra           88.5
+1010    Manzi Byiringiro           Web Design               49.0
+1011    Belyse Iradukunda          Web Design               94.5
+1012    Muzungu Gatete             Web Design               61.0
+1013    Geovanie Nshimiyimana      Embedded C               58.0
+1014    Shukurani Hakizimana       Data Structures          75.5
+1015    Allen Tuyishime            Linear Algebra           42.5
+Records: 15 (memory reserved for 15)
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: abc
+Invalid input. Enter a whole number from 1 to 10.
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1016
+Full name: Giselle Rukundo
+Course: Web Design
+Grade (0-100): 150
+Invalid input. Enter a number from 0.0 to 100.0.
+Grade (0-100): -5
+Invalid input. Enter a number from 0.0 to 100.0.
+Grade (0-100): 69
+Student 1016 added. Total records: 16
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1016
+Rejected: a student with ID 1016 already exists.
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1017
+Full name: Smiley Irakoze
+Course: Embedded C
+Grade (0-100): 81
+Student 1017 added. Total records: 17
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1018
+Full name: Peace Umutoni
+Course: Data Structures
+Grade (0-100): 52.5
+Student 1018 added. Total records: 18
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1019
+Full name: Christella Uwera
+Course: Linear Algebra
+Grade (0-100): 90
+Student 1019 added. Total records: 19
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1020
+Full name: Regine Niyonsaba
+Course: Web Design
+Grade (0-100): 35.5
+Student 1020 added. Total records: 20
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1021
+Full name: Happy Kamanzi
+Course: Embedded C
+Grade (0-100): 64
+Student 1021 added. Total records: 21
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1022
+Full name: Esther Ndayisaba
+Course: Data Structures
+Grade (0-100): 77
+Student 1022 added. Total records: 22
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1023
+Full name: Vux Nkurunziza
+Course: Linear Algebra
+Grade (0-100): 86.5
+Student 1023 added. Total records: 23
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 2
+
+All students:
+ID      Name                       Course                  Grade
+1001    Chico Mugisha              Embedded C               78.5
+1002    Gisele Uwase               Embedded C               91.0
+1003    Soleil Ishimwe             Embedded C               46.5
+1004    Elina Uwimana              Data Structures          83.0
+1005    Queen Ingabire             Data Structures          67.5
+1006    Derick Habimana            Data Structures          38.0
+1007    Nina Mutoni                Linear Algebra           72.0
+1008    Bonheur Niyonzima          Linear Algebra           55.5
+1009    Consolee Mukamana          Linear Algebra           88.5
+1010    Manzi Byiringiro           Web Design               49.0
+1011    Belyse Iradukunda          Web Design               94.5
+1012    Muzungu Gatete             Web Design               61.0
+1013    Geovanie Nshimiyimana      Embedded C               58.0
+1014    Shukurani Hakizimana       Data Structures          75.5
+1015    Allen Tuyishime            Linear Algebra           42.5
+1016    Giselle Rukundo            Web Design               69.0
+1017    Smiley Irakoze             Embedded C               81.0
+1018    Peace Umutoni              Data Structures          52.5
+1019    Christella Uwera           Linear Algebra           90.0
+1020    Regine Niyonsaba           Web Design               35.5
+1021    Happy Kamanzi              Embedded C               64.0
+1022    Esther Ndayisaba           Data Structures          77.0
+1023    Vux Nkurunziza             Linear Algebra           86.5
+Records: 23 (memory reserved for 30)
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 3
+
+Sort students:
+1. Grade (highest first)
+2. Name (A to Z)
+3. Student ID (smallest first)
+Sort by: 1
+Sorted by Grade (highest first).
+ID      Name                       Course                  Grade
+1011    Belyse Iradukunda          Web Design               94.5
+1002    Gisele Uwase               Embedded C               91.0
+1019    Christella Uwera           Linear Algebra           90.0
+1009    Consolee Mukamana          Linear Algebra           88.5
+1023    Vux Nkurunziza             Linear Algebra           86.5
+1004    Elina Uwimana              Data Structures          83.0
+1017    Smiley Irakoze             Embedded C               81.0
+1001    Chico Mugisha              Embedded C               78.5
+1022    Esther Ndayisaba           Data Structures          77.0
+1014    Shukurani Hakizimana       Data Structures          75.5
+1007    Nina Mutoni                Linear Algebra           72.0
+1016    Giselle Rukundo            Web Design               69.0
+1005    Queen Ingabire             Data Structures          67.5
+1021    Happy Kamanzi              Embedded C               64.0
+1012    Muzungu Gatete             Web Design               61.0
+1013    Geovanie Nshimiyimana      Embedded C               58.0
+1008    Bonheur Niyonzima          Linear Algebra           55.5
+1018    Peace Umutoni              Data Structures          52.5
+1010    Manzi Byiringiro           Web Design               49.0
+1003    Soleil Ishimwe             Embedded C               46.5
+1015    Allen Tuyishime            Linear Algebra           42.5
+1006    Derick Habimana            Data Structures          38.0
+1020    Regine Niyonsaba           Web Design               35.5
+Records: 23 (memory reserved for 30)
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 3
+
+Sort students:
+1. Grade (highest first)
+2. Name (A to Z)
+3. Student ID (smallest first)
+Sort by: 2
+Sorted by Name (A to Z).
+ID      Name                       Course                  Grade
+1015    Allen Tuyishime            Linear Algebra           42.5
+1011    Belyse Iradukunda          Web Design               94.5
+1008    Bonheur Niyonzima          Linear Algebra           55.5
+1001    Chico Mugisha              Embedded C               78.5
+1019    Christella Uwera           Linear Algebra           90.0
+1009    Consolee Mukamana          Linear Algebra           88.5
+1006    Derick Habimana            Data Structures          38.0
+1004    Elina Uwimana              Data Structures          83.0
+1022    Esther Ndayisaba           Data Structures          77.0
+1013    Geovanie Nshimiyimana      Embedded C               58.0
+1002    Gisele Uwase               Embedded C               91.0
+1016    Giselle Rukundo            Web Design               69.0
+1021    Happy Kamanzi              Embedded C               64.0
+1010    Manzi Byiringiro           Web Design               49.0
+1012    Muzungu Gatete             Web Design               61.0
+1007    Nina Mutoni                Linear Algebra           72.0
+1018    Peace Umutoni              Data Structures          52.5
+1005    Queen Ingabire             Data Structures          67.5
+1020    Regine Niyonsaba           Web Design               35.5
+1014    Shukurani Hakizimana       Data Structures          75.5
+1017    Smiley Irakoze             Embedded C               81.0
+1003    Soleil Ishimwe             Embedded C               46.5
+1023    Vux Nkurunziza             Linear Algebra           86.5
+Records: 23 (memory reserved for 30)
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 4
+Average grade of 23 students: 67.67
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 5
+
+Top-performing student:
+ID      Name                       Course                  Grade
+1011    Belyse Iradukunda          Web Design               94.5
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 6
+
+Search:
+1. By student ID
+2. By name
+Search by: 1
+Student ID: 1019
+ID      Name                       Course                  Grade
+1019    Christella Uwera           Linear Algebra           90.0
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 6
+
+Search:
+1. By student ID
+2. By name
+Search by: 2
+Name, first name or surname: uwase
+ID      Name                       Course                  Grade
+1002    Gisele Uwase               Embedded C               91.0
+1 match(es).
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 6
+
+Search:
+1. By student ID
+2. By name
+Search by: 2
+Name, first name or surname: Kevin
+No student named "Kevin".
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 7
+
+Remove a student:
+Student ID to remove: 1020
+Student 1020 removed. Total records: 22
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 7
+
+Remove a student:
+Student ID to remove: 1006
+Student 1006 removed. Total records: 21
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 7
+
+Remove a student:
+Student ID to remove: 9999
+No student with ID 9999, nothing removed.
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 2
+
+All students:
+ID      Name                       Course                  Grade
+1015    Allen Tuyishime            Linear Algebra           42.5
+1011    Belyse Iradukunda          Web Design               94.5
+1008    Bonheur Niyonzima          Linear Algebra           55.5
+1001    Chico Mugisha              Embedded C               78.5
+1019    Christella Uwera           Linear Algebra           90.0
+1009    Consolee Mukamana          Linear Algebra           88.5
+1004    Elina Uwimana              Data Structures          83.0
+1022    Esther Ndayisaba           Data Structures          77.0
+1013    Geovanie Nshimiyimana      Embedded C               58.0
+1002    Gisele Uwase               Embedded C               91.0
+1016    Giselle Rukundo            Web Design               69.0
+1021    Happy Kamanzi              Embedded C               64.0
+1010    Manzi Byiringiro           Web Design               49.0
+1012    Muzungu Gatete             Web Design               61.0
+1007    Nina Mutoni                Linear Algebra           72.0
+1018    Peace Umutoni              Data Structures          52.5
+1005    Queen Ingabire             Data Structures          67.5
+1014    Shukurani Hakizimana       Data Structures          75.5
+1017    Smiley Irakoze             Embedded C               81.0
+1003    Soleil Ishimwe             Embedded C               46.5
+1023    Vux Nkurunziza             Linear Algebra           86.5
+Records: 21 (memory reserved for 30)
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 8
+
+Academic Risk Index (0 = no risk, 100 = highest risk)
+ARI = 70 x max(0, 60 - grade)/60 + 30 x max(0, course avg - grade)/100
+ID      Name                      Grade Course avg    ARI  Band    
+1015    Allen Tuyishime            42.5       72.5   29.4  High    
+1011    Belyse Iradukunda          94.5       68.4    0.0  None    
+1008    Bonheur Niyonzima          55.5       72.5   10.4  Moderate
+1001    Chico Mugisha              78.5       69.8    0.0  None    
+1019    Christella Uwera           90.0       72.5    0.0  None    
+1009    Consolee Mukamana          88.5       72.5    0.0  None    
+1004    Elina Uwimana              83.0       71.1    0.0  None    
+1022    Esther Ndayisaba           77.0       71.1    0.0  None    
+1013    Geovanie Nshimiyimana      58.0       69.8    5.9  Low     
+1002    Gisele Uwase               91.0       69.8    0.0  None    
+1016    Giselle Rukundo            69.0       68.4    0.0  None    
+1021    Happy Kamanzi              64.0       69.8    1.8  Low     
+1010    Manzi Byiringiro           49.0       68.4   18.6  Moderate
+1012    Muzungu Gatete             61.0       68.4    2.2  Low     
+1007    Nina Mutoni                72.0       72.5    0.1  Low     
+1018    Peace Umutoni              52.5       71.1   14.3  Moderate
+1005    Queen Ingabire             67.5       71.1    1.1  Low     
+1014    Shukurani Hakizimana       75.5       71.1    0.0  None    
+1017    Smiley Irakoze             81.0       69.8    0.0  None    
+1003    Soleil Ishimwe             46.5       69.8   22.8  Moderate
+1023    Vux Nkurunziza             86.5       72.5    0.0  None    
+Risk bands: None 11 | Low 5 | Moderate 4 | High 1
+Mean risk index: 5.1
+Most at risk: Allen Tuyishime (ID 1015), index 29.4
+Bands: None = 0, Low < 10, Moderate < 25, High >= 25.
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 9
+
+Summary Report
+Total student records: 21
+Average grade: 70.62
+Highest grade: 94.5 (Belyse Iradukunda, ID 1011)
+Lowest grade: 42.5 (Allen Tuyishime, ID 1015)
+Pass mark: 50
+Students passing (>= 50): 18
+Students below pass mark: 3
+
+Custom analysis - Academic Risk Index
+Risk bands: None 11 | Low 5 | Moderate 4 | High 1
+Mean risk index: 5.1
+Most at risk: Allen Tuyishime (ID 1015), index 29.4
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 10
+All memory released. Goodbye.
