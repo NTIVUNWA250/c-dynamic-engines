@@ -4,7 +4,7 @@
 #include "textbuf.h"
 #include "wordstat.h"
 
-#define SOURCE_LEN 160
+#define SOURCE_LEN 320
 #define MIN_RECOMMENDED_WORDS 150
 
 typedef struct TextAnalysis {
