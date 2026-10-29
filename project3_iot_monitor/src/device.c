@@ -4,9 +4,9 @@
 
 // Documented ranges. Simulation goes a little past the normal range, so alerts happen.
 static const DeviceLimits LIMITS[DEVICE_TYPE_COUNT] = {
-    [DEVICE_TEMPERATURE] = {"Temperature", "C", 5.0, 60.0, 15.0, 45.0, 10.0},
-    [DEVICE_PRESSURE] = {"Pressure", "hPa", 850.0, 1150.0, 950.0, 1050.0, 60.0},
-    [DEVICE_BATTERY] = {"Battery", "V", 2.9, 4.4, 3.3, 4.2, 0.35},
+    [DEVICE_TEMPERATURE] = {"Temperature", "C", 5.0, 60.0, 15.0, 45.0, 10.0, 6.0},
+    [DEVICE_PRESSURE] = {"Pressure", "hPa", 850.0, 1150.0, 950.0, 1050.0, 60.0, 35.0},
+    [DEVICE_BATTERY] = {"Battery", "V", 2.9, 4.4, 3.3, 4.2, 0.35, 0.2},
 };
 
 const DeviceLimits *device_limits(DeviceType type)

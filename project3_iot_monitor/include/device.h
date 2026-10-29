@@ -25,6 +25,8 @@ struct Device {
     size_t reading_count;  // readings processed for this device
     int has_previous;      // 1 once a reading has been seen (for drift detection)
     double previous;       // the reading before the current one
+    int has_sim_last;      // simulator state: 1 once a value has been generated
+    double sim_last;       // simulator state: the last generated value
 };
 typedef struct Device Device;
 
@@ -35,6 +37,7 @@ typedef struct DeviceLimits {
     double sim_min, sim_max;        // simulated readings fall in this range
     double normal_low, normal_high; // readings outside this range raise an alert
     double drift_limit;             // largest normal change between two readings
+    double step;                    // largest normal step the simulator takes per reading
 } DeviceLimits;
 
 // Limits for a device type, or NULL if the type is not valid.

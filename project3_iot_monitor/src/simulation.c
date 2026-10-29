@@ -24,40 +24,59 @@ static double random_between(double min, double max)
     return min + (max - min) * ((double)rand() / (double)RAND_MAX);
 }
 
-// One generator per type; each fills only the union member for its type.
-static union DeviceReading gen_temperature(void)
+// One packer per type; each stores the value in the union member for that type only.
+static union DeviceReading pack_temperature(double value)
 {
-    const DeviceLimits *l = device_limits(DEVICE_TEMPERATURE);
     union DeviceReading r;
-    r.temperature = (float)random_between(l->sim_min, l->sim_max);
+    r.temperature = (float)value;
     return r;
 }
 
-static union DeviceReading gen_pressure(void)
+static union DeviceReading pack_pressure(double value)
 {
-    const DeviceLimits *l = device_limits(DEVICE_PRESSURE);
     union DeviceReading r;
-    r.pressure = (int)(random_between(l->sim_min, l->sim_max) + 0.5);
+    r.pressure = (int)(value + 0.5);
     return r;
 }
 
-static union DeviceReading gen_battery(void)
+static union DeviceReading pack_battery(double value)
 {
-    const DeviceLimits *l = device_limits(DEVICE_BATTERY);
     union DeviceReading r;
-    r.voltage = (float)random_between(l->sim_min, l->sim_max);
+    r.voltage = (float)value;
     return r;
 }
 
-static union DeviceReading (*const GENERATORS[DEVICE_TYPE_COUNT])(void) = {
-    [DEVICE_TEMPERATURE] = gen_temperature,
-    [DEVICE_PRESSURE] = gen_pressure,
-    [DEVICE_BATTERY] = gen_battery,
+static union DeviceReading (*const PACKERS[DEVICE_TYPE_COUNT])(double) = {
+    [DEVICE_TEMPERATURE] = pack_temperature,
+    [DEVICE_PRESSURE] = pack_pressure,
+    [DEVICE_BATTERY] = pack_battery,
 };
 
-union DeviceReading generate_reading(DeviceType type)
+union DeviceReading simulate_next(Device *device)
 {
-    return GENERATORS[type]();
+    const DeviceLimits *l = device_limits(device->type);
+    double value;
+    if (!device->has_sim_last) {
+        // First reading: somewhere in the normal range.
+        value = random_between(l->normal_low, l->normal_high);
+    } else if (rand() % 100 < SPIKE_PERCENT) {
+        // Spike: a jump of 1.2 to 2.5 drift limits, up or down.
+        double jump = random_between(1.2, 2.5) * l->drift_limit;
+        value = device->sim_last + (rand() % 2 ? jump : -jump);
+    } else {
+        // Normal step: a small random move, pulled 15% of the way back toward the
+        // middle of the normal range so readings settle like a real sensor.
+        double centre = (l->normal_low + l->normal_high) / 2.0;
+        value = device->sim_last + 0.15 * (centre - device->sim_last) +
+                random_between(-l->step, l->step);
+    }
+    if (value < l->sim_min)
+        value = l->sim_min;
+    if (value > l->sim_max)
+        value = l->sim_max;
+    device->sim_last = value;
+    device->has_sim_last = 1;
+    return PACKERS[device->type](value);
 }
 
 // Appends a reading, doubling the queue when full. Returns 0 if memory runs out.
@@ -77,13 +96,13 @@ static int queue_push(ReadingQueue *queue, const PendingReading *reading)
     return 1;
 }
 
-long simulate_rounds(const DeviceList *devices, ReadingQueue *queue, int rounds)
+long simulate_rounds(DeviceList *devices, ReadingQueue *queue, int rounds)
 {
     long queued = 0;
     for (int round = 0; round < rounds; round++) {
         // Pointer traversal over the registered devices.
-        for (const Device *d = devices->items, *end = d + devices->count; d < end; d++) {
-            PendingReading reading = {d->id, d->type, generate_reading(d->type)};
+        for (Device *d = devices->items, *end = d + devices->count; d < end; d++) {
+            PendingReading reading = {d->id, d->type, simulate_next(d)};
             if (!queue_push(queue, &reading))
                 return -1;
             queued++;

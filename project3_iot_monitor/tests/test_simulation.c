@@ -9,15 +9,29 @@ int main(void)
 {
     srand(12345);
 
-    // Every generated value lies in its type's simulation range.
+    // Simulated values stay in range, start normal, and step by at most 2.5 drift limits.
+    DeviceList walk;
+    devices_init(&walk, 0);
+    devices_register(&walk, 1, "T", DEVICE_TEMPERATURE);
+    devices_register(&walk, 2, "P", DEVICE_PRESSURE);
+    devices_register(&walk, 3, "B", DEVICE_BATTERY);
+    Device *t = devices_find(&walk, 1);
+    Device *p = devices_find(&walk, 2);
+    Device *b = devices_find(&walk, 3);
+    union DeviceReading first = simulate_next(t);
+    CHECK(first.temperature >= 15.0f && first.temperature <= 45.0f);
+    double last_t = first.temperature;
     for (int i = 0; i < 2000; i++) {
-        union DeviceReading t = generate_reading(DEVICE_TEMPERATURE);
-        union DeviceReading p = generate_reading(DEVICE_PRESSURE);
-        union DeviceReading b = generate_reading(DEVICE_BATTERY);
-        CHECK(t.temperature >= 5.0f && t.temperature <= 60.0f);
-        CHECK(p.pressure >= 850 && p.pressure <= 1150);
-        CHECK(b.voltage >= 2.9f && b.voltage <= 4.4f);
+        union DeviceReading rt = simulate_next(t);
+        union DeviceReading rp = simulate_next(p);
+        union DeviceReading rb = simulate_next(b);
+        CHECK(rt.temperature >= 5.0f && rt.temperature <= 60.0f);
+        CHECK(rp.pressure >= 850 && rp.pressure <= 1150);
+        CHECK(rb.voltage >= 2.9f && rb.voltage <= 4.4f);
+        CHECK(rt.temperature - last_t <= 25.01 && last_t - rt.temperature <= 25.01);
+        last_t = rt.temperature;
     }
+    devices_free(&walk);
 
     DeviceList devices;
     devices_init(&devices, 0);

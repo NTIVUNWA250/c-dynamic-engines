@@ -28,12 +28,15 @@ typedef struct ProcessResult {
     size_t skipped; // readings whose device was removed before processing
 } ProcessResult;
 
-// A random reading for this type, inside its documented simulation range.
-union DeviceReading generate_reading(DeviceType type);
+#define SPIKE_PERCENT 15 // chance that a reading is a sudden spike instead of a small step
+
+// Next simulated reading for a device (a random walk, see docs/custom_callback.md).
+// The value always stays inside the type's simulation range.
+union DeviceReading simulate_next(Device *device);
 
 // Queues one new reading per registered device, `rounds` times.
 // Returns the number queued, or -1 if memory ran out (readings queued so far are kept).
-long simulate_rounds(const DeviceList *devices, ReadingQueue *queue, int rounds);
+long simulate_rounds(DeviceList *devices, ReadingQueue *queue, int rounds);
 
 // Copies each queued reading into its device and runs the type callback, then the
 // drift detector, through process_device. Prints one line per reading. Empties the queue.
