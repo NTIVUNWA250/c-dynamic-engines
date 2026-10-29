@@ -1,7 +1,6 @@
 #include "engine.h"
 #include "log.h"
 
-// Starting devices: two of each type.
 static const struct {
     int id;
     const char *name;

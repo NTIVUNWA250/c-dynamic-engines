@@ -4,7 +4,6 @@
 
 #include <stdio.h>
 
-// Menu choice N runs MENU[N - 1].operation. The last entry (NULL) is Exit.
 static const struct {
     const char *label;
     EngineOperation operation;
@@ -37,6 +36,6 @@ void run_menu(Engine *engine)
         if (operation == NULL)
             return;
         log_msg(LOG_DEBUG, "menu", "running option %d", choice);
-        operation(engine); // dispatch through the function pointer
+        operation(engine);
     }
 }

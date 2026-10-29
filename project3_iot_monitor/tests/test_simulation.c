@@ -4,12 +4,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Generated values stay in range, readings are queued and processed, removed devices skipped.
 int main(void)
 {
     srand(12345);
 
-    // Simulated values stay in range, start normal, and step by at most 2.5 drift limits.
     DeviceList walk;
     devices_init(&walk, 0);
     devices_register(&walk, 1, "T", DEVICE_TEMPERATURE);
@@ -45,12 +43,10 @@ int main(void)
     Monitor monitor;
     monitor_init(&monitor);
 
-    // 4 devices x 3 rounds = 12 readings, more than the required 10.
     CHECK(simulate_rounds(&devices, &queue, 3) == 12);
     CHECK(queue.count == 12);
     CHECK(queue.items[0].device_id == 1 && queue.items[4].device_id == 1);
 
-    // Remove a device with readings still queued: its 3 readings are skipped safely.
     CHECK(devices_remove(&devices, 2));
     ProcessResult r = process_queue(&devices, &queue, &monitor);
     CHECK(r.processed == 9 && r.skipped == 3);
@@ -61,7 +57,6 @@ int main(void)
     CHECK(devices_find(&devices, 1)->reading_count == 3);
     CHECK(devices_find(&devices, 1)->status != STATUS_IDLE);
 
-    // Processing an empty queue does nothing.
     r = process_queue(&devices, &queue, &monitor);
     CHECK(r.processed == 0 && r.skipped == 0);
 

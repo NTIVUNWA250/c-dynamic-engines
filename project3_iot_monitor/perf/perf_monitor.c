@@ -7,8 +7,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define DEVICES 2000 // registering scans for duplicate IDs, so n registrations cost O(n^2)
-#define ROUNDS 50    // 100,000 readings
+#define DEVICES 2000
+#define ROUNDS 50
 #define BUDGET_SECONDS 1.0
 
 static double seconds_since(clock_t start)
@@ -16,7 +16,6 @@ static double seconds_since(clock_t start)
     return (double)(clock() - start) / CLOCKS_PER_SEC;
 }
 
-// Times one step and fails the check if it goes over the budget.
 #define TIMED(label, code)                                     \
     do {                                                       \
         clock_t start_ = clock();                              \
@@ -26,7 +25,6 @@ static double seconds_since(clock_t start)
         CHECK(took_ < BUDGET_SECONDS);                         \
     } while (0)
 
-// Large-input timing: registering, simulating and processing 100k readings.
 int main(void)
 {
     srand(1);
@@ -43,7 +41,6 @@ int main(void)
 
     Monitor monitor;
     monitor_init(&monitor);
-    // stdout goes to /dev/null so printing does not dominate the timing.
     FILE *saved = freopen("/dev/null", "w", stdout);
     CHECK(saved != NULL);
     TIMED("process 100k through callbacks", process_queue(&devices, &queue, &monitor));

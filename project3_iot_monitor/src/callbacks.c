@@ -9,10 +9,9 @@ void process_device(struct Device *device, void (*callback)(struct Device *))
     if (device == NULL || callback == NULL)
         return;
     log_msg(LOG_DEBUG, "callbacks", "dispatching device %d", device->id);
-    callback(device); // the call goes through the function pointer
+    callback(device);
 }
 
-// Compares a reading with its type's normal range and records the outcome.
 static void check_range(struct Device *device, double value, const char *callback,
                         const char *too_low, const char *too_high)
 {
@@ -62,7 +61,6 @@ void battery_monitor(struct Device *device)
                 "over-voltage: charging fault, battery may be damaged");
 }
 
-// Index = device type, so choosing a callback needs no if/else chain.
 static const struct {
     DeviceCallback callback;
     const char *name;

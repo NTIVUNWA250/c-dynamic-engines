@@ -10,7 +10,6 @@
 #include <string.h>
 #include <time.h>
 
-// Seeds rand(): "--seed N" repeats the same readings every run, otherwise the clock is used.
 static unsigned seed_from_args(int argc, char **argv)
 {
     int seed;
@@ -39,7 +38,6 @@ int main(int argc, char **argv)
 
     run_menu(&engine);
 
-    // Release the device array, the reading queue and the alert log before leaving.
     engine_free(&engine);
     printf("All memory released. Goodbye.\n");
     return EXIT_SUCCESS;

@@ -5,9 +5,6 @@
 #include <math.h>
 #include <stdio.h>
 
-// Sensor Drift Detector (see docs/custom_callback.md):
-// change = current - previous. If |change| > the type's drift_limit, raise an alert.
-// The first reading of a device only sets the baseline.
 void drift_detector(struct Device *device)
 {
     Monitor *m = monitor_active();
@@ -22,7 +19,6 @@ void drift_detector(struct Device *device)
     if (device->has_previous) {
         double change = value - device->previous;
         double ratio = fabs(change) / limits->drift_limit;
-        // Remember the biggest jump seen, measured against its own type's limit.
         if (ratio > m->largest_drift_ratio) {
             m->largest_drift_ratio = ratio;
             m->largest_drift_device = device->id;

@@ -39,7 +39,6 @@ void display_devices(Engine *engine)
     }
     printf("%-6s %-22s %-12s %-12s %-8s %s\n", "ID", "Name", "Type", "Last value", "Status",
            "Readings");
-    // Pointer traversal over the device array.
     for (const Device *d = list->items, *end = d + list->count; d < end; d++) {
         char value[32] = "-";
         if (d->reading_count > 0)

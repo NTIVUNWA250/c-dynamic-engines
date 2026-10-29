@@ -31,7 +31,6 @@ void devices_free(DeviceList *list)
     list->capacity = 0;
 }
 
-// Resizes the array; on failure the old block is kept untouched.
 static int resize(DeviceList *list, size_t new_capacity)
 {
     Device *moved = realloc(list->items, new_capacity * sizeof *moved);
@@ -47,7 +46,6 @@ static int resize(DeviceList *list, size_t new_capacity)
 
 Device *devices_find(const DeviceList *list, int id)
 {
-    // Pointer traversal from the first device to one past the last.
     for (Device *p = list->items, *end = list->items + list->count; p < end; p++)
         if (p->id == id)
             return p;
@@ -74,7 +72,7 @@ RegisterResult devices_register(DeviceList *list, int id, const char *name, Devi
     Device *slot = list->items + list->count;
     memset(slot, 0, sizeof *slot);
     slot->id = id;
-    snprintf(slot->name, sizeof slot->name, "%s", name); // cuts names longer than 39 chars
+    snprintf(slot->name, sizeof slot->name, "%s", name);
     slot->type = type;
     slot->status = STATUS_IDLE;
     list->count++;
@@ -88,7 +86,6 @@ int devices_remove(DeviceList *list, int id)
     if (target == NULL)
         return 0;
 
-    // Slide the later devices left to close the gap.
     Device *end = list->items + list->count;
     memmove(target, target + 1, (size_t)(end - target - 1) * sizeof *target);
     list->count--;
@@ -97,7 +94,7 @@ int devices_remove(DeviceList *list, int id)
     if (list->count == 0) {
         devices_free(list);
     } else if (list->capacity > MIN_CAPACITY && list->count <= list->capacity / 4) {
-        resize(list, list->capacity / 2); // halve when three quarters is unused
+        resize(list, list->capacity / 2);
     }
     return 1;
 }

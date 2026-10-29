@@ -3,7 +3,6 @@
 
 #include <string.h>
 
-// Registering, rejecting, finding, removing, resizing, and reading the right union member.
 int main(void)
 {
     DeviceList list;
@@ -21,13 +20,11 @@ int main(void)
     CHECK(devices_register(&list, 9, "", DEVICE_BATTERY) == DEV_EMPTY_NAME);
     CHECK(list.count == 3);
 
-    // New devices start idle, and long names are cut to fit name[40].
     CHECK(devices_find(&list, 1)->status == STATUS_IDLE);
     CHECK(devices_register(&list, 4, "A very long device name that does not fit in forty chars",
                            DEVICE_TEMPERATURE) == DEV_OK);
     CHECK(strlen(devices_find(&list, 4)->name) == DEVICE_NAME_LEN - 1);
 
-    // The value accessor reads the member that matches the type.
     Device *t = devices_find(&list, 1);
     t->readings.temperature = 38.5f;
     CHECK(device_value(t) == 38.5);
@@ -42,13 +39,11 @@ int main(void)
     format_reading(b, text, sizeof text);
     CHECK(strcmp(text, "3.70 V") == 0);
 
-    // Removing keeps the others in order; a missing id is reported.
     CHECK(devices_remove(&list, 2));
     CHECK(!devices_remove(&list, 2));
     CHECK(list.count == 3 && list.items[0].id == 1 && list.items[1].id == 3);
-    CHECK(devices_find(&list, 3)->readings.voltage == 3.70f); // data survives the move
+    CHECK(devices_find(&list, 3)->readings.voltage == 3.70f);
 
-    // Grow to many devices and shrink back.
     for (int id = 100; id < 140; id++)
         CHECK(devices_register(&list, id, "Load", DEVICE_BATTERY) == DEV_OK);
     size_t big = list.capacity;
@@ -56,7 +51,6 @@ int main(void)
         CHECK(devices_remove(&list, id));
     CHECK(list.capacity < big && list.count == 3);
 
-    // Removing every device releases the array.
     CHECK(devices_remove(&list, 1) && devices_remove(&list, 3) && devices_remove(&list, 4));
     CHECK(list.items == NULL && list.capacity == 0);
 

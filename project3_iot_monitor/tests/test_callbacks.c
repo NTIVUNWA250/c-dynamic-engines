@@ -5,7 +5,6 @@
 
 #include <string.h>
 
-// Range callbacks per type, dispatch by table, and the drift detector.
 int main(void)
 {
     Monitor m;
@@ -21,14 +20,12 @@ int main(void)
     Device *p = devices_find(&list, 2);
     Device *b = devices_find(&list, 3);
 
-    // The table hands each type its own callback.
     CHECK(callback_for_type(DEVICE_TEMPERATURE) == temperature_monitor);
     CHECK(callback_for_type(DEVICE_PRESSURE) == pressure_monitor);
     CHECK(callback_for_type(DEVICE_BATTERY) == battery_monitor);
     CHECK(callback_for_type(DEVICE_TYPE_COUNT) == NULL);
     CHECK(strcmp(callback_name_for_type(DEVICE_BATTERY), "battery_monitor") == 0);
 
-    // Normal readings, including the exact edges of each range.
     t->readings.temperature = 45.0f;
     process_device(t, callback_for_type(t->type));
     p->readings.pressure = 950;
@@ -38,7 +35,6 @@ int main(void)
     CHECK(t->status == STATUS_NORMAL && p->status == STATUS_NORMAL && b->status == STATUS_NORMAL);
     CHECK(m.readings_processed == 3 && m.normal_readings == 3 && m.alert_count == 0);
 
-    // Abnormal readings: one per type, each with its own reason and callback name.
     t->readings.temperature = 52.5f;
     process_device(t, callback_for_type(t->type));
     p->readings.pressure = 900;
@@ -57,21 +53,19 @@ int main(void)
     CHECK(m.range_alerts_per_type[DEVICE_PRESSURE] == 1);
     CHECK(m.range_alerts_per_type[DEVICE_BATTERY] == 1);
 
-    // A NULL callback or device is ignored safely.
     process_device(t, NULL);
     process_device(NULL, temperature_monitor);
     CHECK(m.readings_processed == 6);
 
-    // Drift: first reading sets the baseline, small change is fine, big jump alerts.
     Device *d = t;
     d->has_previous = 0;
     d->readings.temperature = 20.0f;
     process_device(d, drift_detector);
     CHECK(m.drift_events == 0 && d->has_previous && d->previous == 20.0);
-    d->readings.temperature = 29.0f; // +9, limit is 10
+    d->readings.temperature = 29.0f;
     process_device(d, drift_detector);
     CHECK(m.drift_events == 0 && m.drift_note[0] == '\0');
-    d->readings.temperature = 41.5f; // +12.5 > 10
+    d->readings.temperature = 41.5f;
     d->status = STATUS_NORMAL;
     process_device(d, drift_detector);
     CHECK(m.drift_events == 1 && d->status == STATUS_ALERT);
@@ -79,15 +73,14 @@ int main(void)
     Alert *last = &m.alerts[m.alert_count - 1];
     CHECK(strcmp(last->callback, "drift_detector") == 0);
     CHECK(strstr(last->reason, "sudden rise of 12.50 C") != NULL);
-    CHECK(last->expected_low == 19.0 && last->expected_high == 39.0); // previous 29 +/- 10
+    CHECK(last->expected_low == 19.0 && last->expected_high == 39.0);
     CHECK(m.largest_drift_device == 1);
     CHECK_NEAR(m.largest_drift_change, 12.5, 1e-6);
 
-    // Drift on an integer pressure reading uses the pressure member and limit.
     p->has_previous = 0;
     p->readings.pressure = 1000;
     process_device(p, drift_detector);
-    p->readings.pressure = 930; // -70 > 60
+    p->readings.pressure = 930;
     process_device(p, drift_detector);
     CHECK(m.drift_per_type[DEVICE_PRESSURE] == 1);
     CHECK(strstr(m.alerts[m.alert_count - 1].reason, "sudden drop of 70.00 hPa") != NULL);

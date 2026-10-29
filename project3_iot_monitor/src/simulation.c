@@ -18,13 +18,11 @@ void queue_free(ReadingQueue *queue)
     queue_init(queue);
 }
 
-// Uniform random number in [min, max] using rand().
 static double random_between(double min, double max)
 {
     return min + (max - min) * ((double)rand() / (double)RAND_MAX);
 }
 
-// One packer per type; each stores the value in the union member for that type only.
 static union DeviceReading pack_temperature(double value)
 {
     union DeviceReading r;
@@ -57,15 +55,11 @@ union DeviceReading simulate_next(Device *device)
     const DeviceLimits *l = device_limits(device->type);
     double value;
     if (!device->has_sim_last) {
-        // First reading: somewhere in the normal range.
         value = random_between(l->normal_low, l->normal_high);
     } else if (rand() % 100 < SPIKE_PERCENT) {
-        // Spike: a jump of 1.2 to 2.5 drift limits, up or down.
         double jump = random_between(1.2, 2.5) * l->drift_limit;
         value = device->sim_last + (rand() % 2 ? jump : -jump);
     } else {
-        // Normal step: a small random move, pulled 15% of the way back toward the
-        // middle of the normal range so readings settle like a real sensor.
         double centre = (l->normal_low + l->normal_high) / 2.0;
         value = device->sim_last + 0.15 * (centre - device->sim_last) +
                 random_between(-l->step, l->step);
@@ -79,7 +73,6 @@ union DeviceReading simulate_next(Device *device)
     return PACKERS[device->type](value);
 }
 
-// Appends a reading, doubling the queue when full. Returns 0 if memory runs out.
 static int queue_push(ReadingQueue *queue, const PendingReading *reading)
 {
     if (queue->count == queue->capacity) {
@@ -100,7 +93,6 @@ long simulate_rounds(DeviceList *devices, ReadingQueue *queue, int rounds)
 {
     long queued = 0;
     for (int round = 0; round < rounds; round++) {
-        // Pointer traversal over the registered devices.
         for (Device *d = devices->items, *end = d + devices->count; d < end; d++) {
             PendingReading reading = {d->id, d->type, simulate_next(d)};
             if (!queue_push(queue, &reading))
@@ -112,7 +104,6 @@ long simulate_rounds(DeviceList *devices, ReadingQueue *queue, int rounds)
     return queued;
 }
 
-// Prints one processed reading: who, what value, which callback, and the result.
 static void print_result(size_t number, const Device *d, const Monitor *m)
 {
     char value[32];
@@ -139,7 +130,7 @@ ProcessResult process_queue(DeviceList *devices, ReadingQueue *queue, Monitor *m
             printf("     reading for device %d skipped: device was removed\n", r->device_id);
             continue;
         }
-        device->readings = r->value; // copy the whole union; the type is unchanged
+        device->readings = r->value;
         process_device(device, callback_for_type(device->type));
         process_device(device, drift_detector);
         print_result(++result.processed, device, monitor);

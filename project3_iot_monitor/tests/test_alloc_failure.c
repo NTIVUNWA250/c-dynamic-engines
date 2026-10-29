@@ -4,7 +4,6 @@
 #include "test.h"
 #include "test_alloc.h"
 
-// When calloc/realloc fail, the engine reports it and keeps its existing data.
 int main(void)
 {
     DeviceList list;
@@ -14,12 +13,11 @@ int main(void)
 
     CHECK(devices_init(&list, 1));
     CHECK(devices_register(&list, 1, "First", DEVICE_BATTERY) == DEV_OK);
-    test_alloc_fail_after(0); // the array is full, so this register needs realloc
+    test_alloc_fail_after(0);
     CHECK(devices_register(&list, 2, "Second", DEVICE_BATTERY) == DEV_NO_MEMORY);
     CHECK(list.count == 1 && list.items[0].id == 1);
     CHECK(devices_register(&list, 2, "Second", DEVICE_BATTERY) == DEV_OK);
 
-    // Reading queue: a failed push stops the simulation with -1.
     ReadingQueue queue;
     queue_init(&queue);
     test_alloc_fail_after(0);
@@ -27,7 +25,6 @@ int main(void)
     CHECK(queue.count == 0);
     CHECK(simulate_rounds(&list, &queue, 1) == 2);
 
-    // Alert log: a failed append is reported and nothing is half-written.
     Monitor m;
     monitor_init(&m);
     test_alloc_fail_after(0);
