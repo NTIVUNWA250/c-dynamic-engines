@@ -13,7 +13,6 @@ static Student make(int id, const char *name, const char *course, float grade)
     return s;
 }
 
-// Adding, rejecting, finding and removing records, including resizing.
 int main(void)
 {
     StudentList list;
@@ -29,7 +28,6 @@ int main(void)
     CHECK(list.count == 3);
     CHECK(list.capacity >= 3);
 
-    // Validation.
     CHECK(list_add(&list, &a) == REC_DUPLICATE_ID);
     Student bad_grade = make(20, "X", "Y", 100.5f);
     CHECK(list_add(&list, &bad_grade) == REC_INVALID_GRADE);
@@ -41,7 +39,6 @@ int main(void)
     CHECK(list_add(&list, &empty) == REC_EMPTY_TEXT);
     CHECK(list.count == 3);
 
-    // Search by id and by name (whole name or one word, any case).
     CHECK(list_find_id(&list, 11) != NULL && list_find_id(&list, 11)->grade == 45.5f);
     CHECK(list_find_id(&list, 99) == NULL);
     const Student *found = list_find_name(&list, "chloe mensah", NULL);
@@ -50,7 +47,6 @@ int main(void)
     CHECK(found != NULL && found->id == 11);
     CHECK(list_find_name(&list, "Otie", NULL) == NULL);
 
-    // Two students with the same first name are both found.
     Student a2 = make(13, "Amina Kato", "Web Design", 60.0f);
     CHECK(list_add(&list, &a2) == REC_OK);
     found = list_find_name(&list, "amina", NULL);
@@ -59,13 +55,11 @@ int main(void)
     CHECK(found != NULL && found->id == 13);
     CHECK(list_find_name(&list, "amina", found) == NULL);
 
-    // Removing keeps the other records in order.
     CHECK(list_remove(&list, 11));
     CHECK(!list_remove(&list, 11));
     CHECK(list.count == 3);
     CHECK(list.items[0].id == 10 && list.items[1].id == 12 && list.items[2].id == 13);
 
-    // Growing to many records and shrinking back down.
     for (int id = 100; id < 140; id++) {
         Student s = make(id, "Test Student", "Load", 50.0f);
         CHECK(list_add(&list, &s) == REC_OK);
@@ -76,7 +70,6 @@ int main(void)
     CHECK(list.capacity < big);
     CHECK(list.count == 3);
 
-    // Removing everything releases the array.
     CHECK(list_remove(&list, 10) && list_remove(&list, 12) && list_remove(&list, 13));
     CHECK(list.items == NULL && list.capacity == 0);
     CHECK(list_add(&list, &a) == REC_OK);

@@ -1,6 +1,4 @@
 #!/bin/sh
-# Runs a scripted session (samples/demo_input.txt) through the program and checks the output.
-# Usage: sh tests/integration.sh <program>
 APP="${1:-bin/academic_engine}"
 OUT="bin/integration_output.txt"
 

@@ -15,7 +15,6 @@ int list_init(StudentList *list, size_t initial_capacity)
     if (initial_capacity == 0)
         return 1;
 
-    // calloc zero-fills, so unused slots never hold garbage.
     list->items = calloc(initial_capacity, sizeof *list->items);
     if (list->items == NULL) {
         log_msg(LOG_ERROR, "records", "could not allocate %zu records", initial_capacity);
@@ -36,7 +35,6 @@ void list_free(StudentList *list)
     list->capacity = 0;
 }
 
-// Resizes the array; on failure the old block is kept untouched.
 static int resize(StudentList *list, size_t new_capacity)
 {
     Student *grown = realloc(list->items, new_capacity * sizeof *grown);
@@ -72,7 +70,6 @@ RecordResult list_add(StudentList *list, const Student *student)
         return result;
     }
 
-    // Double the capacity when full, so adding many records stays fast.
     if (list->count == list->capacity) {
         size_t new_capacity = list->capacity < MIN_CAPACITY ? MIN_CAPACITY : list->capacity * 2;
         if (!resize(list, new_capacity))
@@ -94,7 +91,6 @@ int list_remove(StudentList *list, int id)
     if (target == NULL)
         return 0;
 
-    // Slide every later record one place left to close the gap.
     Student *end = list->items + list->count;
     memmove(target, target + 1, (size_t)(end - target - 1) * sizeof *target);
     list->count--;
@@ -106,7 +102,6 @@ int list_remove(StudentList *list, int id)
         list->capacity = 0;
         log_msg(LOG_INFO, "records", "list empty, memory released");
     } else if (list->capacity > MIN_CAPACITY && list->count <= list->capacity / 4) {
-        // Halve the array when three quarters of it is unused.
         resize(list, list->capacity / 2);
     }
     return 1;
@@ -114,14 +109,12 @@ int list_remove(StudentList *list, int id)
 
 Student *list_find_id(const StudentList *list, int id)
 {
-    // Pointer traversal: walk from the first record to one past the last.
     for (Student *p = list->items, *end = list->items + list->count; p < end; p++)
         if (p->id == id)
             return p;
     return NULL;
 }
 
-// True when query equals the whole name or one of its words, ignoring case.
 static int name_matches(const char *name, const char *query)
 {
     char lowered_name[NAME_LEN];
@@ -132,7 +125,6 @@ static int name_matches(const char *name, const char *query)
     if (strcmp(lowered_name, lowered_query) == 0)
         return 1;
 
-    // Split the name into words in place and compare each one with strcmp.
     char *word = lowered_name;
     while (*word != '\0') {
         char *space = strchr(word, ' ');

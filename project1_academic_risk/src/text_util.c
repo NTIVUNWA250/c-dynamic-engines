@@ -10,7 +10,6 @@ void to_lower_copy(char *dest, const char *src, size_t size)
         return;
     char *out = dest;
     char *last = dest + size - 1;
-    // Stop at the end of src or one byte before the end of dest, whichever comes first.
     while (*src != '\0' && out < last)
         *out++ = (char)tolower((unsigned char)*src++);
     *out = '\0';

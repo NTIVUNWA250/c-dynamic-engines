@@ -4,7 +4,6 @@
 
 #include <stdio.h>
 
-// Prints how many students fall in each risk band, the mean and the top risk.
 static void print_risk_totals(const RiskSummary *summary)
 {
     printf("Risk bands: None %zu | Low %zu | Moderate %zu | High %zu\n",

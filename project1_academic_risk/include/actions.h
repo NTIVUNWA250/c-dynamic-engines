@@ -3,7 +3,6 @@
 
 #include "student.h"
 
-// Every menu operation has this shape, so they can sit in one function-pointer table.
 typedef void (*MenuAction)(StudentList *list);
 
 void add_student(StudentList *list);

@@ -5,7 +5,6 @@
 
 #include <stdio.h>
 
-// Menu choice N runs MENU[N - 1].action. The last entry (NULL action) is Exit.
 static const struct {
     const char *label;
     MenuAction action;
@@ -40,6 +39,6 @@ void run_menu(StudentList *list)
         if (action == NULL)
             return;
         log_msg(LOG_DEBUG, "menu", "running option %d", choice);
-        action(list); // dispatch through the function pointer
+        action(list);
     }
 }

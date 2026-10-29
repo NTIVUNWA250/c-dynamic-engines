@@ -15,13 +15,11 @@ static void add(StudentList *list, int id, const char *name, float grade)
     list_add(list, &s);
 }
 
-// Average, top, lowest, pass counts and all three sort orders.
 int main(void)
 {
     StudentList list;
     list_init(&list, 0);
 
-    // Empty list: no crash, sensible defaults.
     CHECK(stats_average(&list) == 0.0f);
     CHECK(stats_top(&list) == NULL);
     CHECK(stats_lowest(&list) == NULL);
@@ -34,15 +32,15 @@ int main(void)
     add(&list, 40, "dave", 90.0f);
 
     CHECK_NEAR(stats_average(&list), 67.5, 0.001);
-    CHECK(stats_top(&list)->id == 10);  // first of the two 90s
+    CHECK(stats_top(&list)->id == 10);
     CHECK(stats_lowest(&list)->id == 20);
-    CHECK(stats_count_passing(&list, PASS_MARK) == 3); // 50 counts as a pass
+    CHECK(stats_count_passing(&list, PASS_MARK) == 3);
 
     sort_students_by(&list, compare_by_grade_desc);
-    CHECK(list.items[0].id == 10 && list.items[1].id == 40); // tie broken by ID
+    CHECK(list.items[0].id == 10 && list.items[1].id == 40);
     CHECK(list.items[2].id == 30 && list.items[3].id == 20);
 
-    sort_students_by(&list, compare_by_name); // ignores case
+    sort_students_by(&list, compare_by_name);
     CHECK(strcmp(list.items[0].name, "Alice") == 0);
     CHECK(strcmp(list.items[1].name, "Bob") == 0);
     CHECK(strcmp(list.items[2].name, "carol") == 0);

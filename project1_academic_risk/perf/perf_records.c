@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <time.h>
 
-#define RECORDS 10000 // each add scans for duplicate IDs, so n adds cost O(n^2)
+#define RECORDS 10000
 #define RISK_RECORDS 2000
 #define BUDGET_SECONDS 1.0
 
@@ -16,7 +16,6 @@ static double seconds_since(clock_t start)
     return (double)(clock() - start) / CLOCKS_PER_SEC;
 }
 
-// Times one step and fails the check if it goes over the budget.
 #define TIMED(label, code)                                              \
     do {                                                                \
         clock_t start_ = clock();                                       \
@@ -36,7 +35,6 @@ static Student make(int id)
     return s;
 }
 
-// Large-input timing: adds, sorts, stats, search, removal and the risk analysis.
 int main(void)
 {
     StudentList list;

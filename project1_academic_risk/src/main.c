@@ -22,7 +22,6 @@ int main(void)
 
     run_menu(&list);
 
-    // Release the record array before leaving.
     list_free(&list);
     printf("All memory released. Goodbye.\n");
     return EXIT_SUCCESS;

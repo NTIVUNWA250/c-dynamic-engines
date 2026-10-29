@@ -1,7 +1,5 @@
 #include "stats.h"
 
-// Every function walks the array with a pointer from start to end instead of an index.
-
 float stats_average(const StudentList *list)
 {
     if (list->count == 0)

@@ -4,7 +4,6 @@
 
 #include <stdlib.h>
 
-// Ties are broken by ID so every sort gives the same order each time.
 static int by_id(const Student *a, const Student *b)
 {
     return (a->id > b->id) - (a->id < b->id);

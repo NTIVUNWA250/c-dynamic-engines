@@ -14,15 +14,13 @@ static void add(StudentList *list, int id, const char *course, float grade)
     list_add(list, &s);
 }
 
-// Formula values, band edges, course averages and the class summary.
 int main(void)
 {
-    // Worked examples from docs/custom_analysis.md.
     CHECK_NEAR(risk_index(90.0f, 70.0f), 0.0, 0.001);
     CHECK_NEAR(risk_index(75.0f, 80.0f), 1.5, 0.001);
     CHECK_NEAR(risk_index(55.0f, 60.0f), 70.0 * 5.0 / 60.0 + 1.5, 0.001);
     CHECK_NEAR(risk_index(30.0f, 70.0f), 35.0 + 12.0, 0.001);
-    CHECK_NEAR(risk_index(0.0f, 100.0f), 100.0, 0.001); // the maximum possible score
+    CHECK_NEAR(risk_index(0.0f, 100.0f), 100.0, 0.001);
 
     CHECK(risk_level(0.0f) == RISK_NONE);
     CHECK(risk_level(9.99f) == RISK_LOW);
@@ -31,7 +29,6 @@ int main(void)
     CHECK(risk_level(25.0f) == RISK_HIGH);
     CHECK(strcmp(risk_level_name(RISK_HIGH), "High") == 0);
 
-    // A failing grade is never rated None or Low.
     CHECK(risk_level(risk_index(49.0f, 49.0f)) >= RISK_MODERATE);
 
     StudentList list;
@@ -50,9 +47,9 @@ int main(void)
 
     RiskSummary summary = risk_summarise(&list);
     CHECK(summary.most_at_risk != NULL && summary.most_at_risk->id == 2);
-    CHECK(summary.level_counts[RISK_NONE] == 2);   // 90 and 62
-    CHECK(summary.level_counts[RISK_LOW] == 1);    // 58
-    CHECK(summary.level_counts[RISK_HIGH] == 1);   // 30
+    CHECK(summary.level_counts[RISK_NONE] == 2);
+    CHECK(summary.level_counts[RISK_LOW] == 1);
+    CHECK(summary.level_counts[RISK_HIGH] == 1);
     size_t total = 0;
     for (int i = 0; i < RISK_LEVEL_COUNT; i++)
         total += summary.level_counts[i];

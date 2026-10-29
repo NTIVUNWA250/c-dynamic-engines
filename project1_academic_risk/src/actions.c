@@ -15,7 +15,6 @@ void add_student(StudentList *list)
     printf("\n-- Add a student --\n");
     if (!read_int("Student ID (1-999999): ", ID_MIN, ID_MAX, &s.id))
         return;
-    // Reject a duplicate straight away instead of after asking for everything else.
     if (list_find_id(list, s.id) != NULL) {
         printf("Rejected: a student with ID %d already exists.\n", s.id);
         return;
@@ -38,7 +37,6 @@ void display_students(StudentList *list)
     print_student_table(list);
 }
 
-// The sort choices, each paired with its comparison function.
 static const struct {
     const char *label;
     StudentCompare compare;
@@ -84,7 +82,6 @@ void find_top_student(StudentList *list)
     print_student_row(top);
 }
 
-// Prints every student whose name or one name word matches the query.
 static void search_by_name(const StudentList *list)
 {
     char query[NAME_LEN];
