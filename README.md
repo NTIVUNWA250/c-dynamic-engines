@@ -38,5 +38,3 @@ Logs go to stderr and are hidden by default. To see them:
 ```
 APP_LOG=info ./bin/academic_engine
 ```
-
-See `STEPS.md` for the things the owner still has to do by hand.
