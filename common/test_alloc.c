@@ -1,5 +1,3 @@
-// Test-only allocator hook. Linked with -Wl,--wrap=malloc,--wrap=calloc,--wrap=realloc,
-// so project code still calls the real functions but tests can force a failure.
 #include <stddef.h>
 
 #include "test_alloc.h"
@@ -19,7 +17,6 @@ void test_alloc_fail_after(int successes)
     countdown = successes;
 }
 
-// Returns 1 when the current allocation should fail.
 static int should_fail(void)
 {
     if (countdown < 0)

@@ -1,4 +1,3 @@
-# Runs the shared helper tests, then every project's tests.
 PROJECTS := $(dir $(wildcard project*/Makefile))
 
 test:
