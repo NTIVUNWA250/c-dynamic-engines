@@ -43,7 +43,7 @@ make unit        # unit tests only (AddressSanitizer + UBSan)
 | Requirement | File |
 |---|---|
 | `struct Student` (id, name, course, grade) | `include/student.h` |
-| Starting dataset of 12 students, header with student ID | `src/dataset.c`, `src/main.c`, `include/config.h` |
+| Starting dataset of 15 students, header with student ID | `src/dataset.c`, `src/main.c`, `include/config.h` |
 | Function-pointer menu table (`MenuAction`) | `src/menu.c`, `include/actions.h` |
 | Function-pointer sort strategies (`StudentCompare` + `qsort`) | `src/sort.c`, `src/actions.c` |
 | `calloc` for the starting array, `realloc` to grow and shrink, `free` on exit | `src/records.c` |
@@ -57,7 +57,7 @@ make unit        # unit tests only (AddressSanitizer + UBSan)
 
 ## Memory growth and shrinking
 
-- The starting array is `calloc`ed for exactly 12 records.
+- The starting array is `calloc`ed for exactly 15 records.
 - When it is full, `realloc` doubles the capacity.
 - When three quarters of it is unused after a removal, `realloc` halves it.
 - Removing the last record frees the array.
@@ -66,7 +66,7 @@ make unit        # unit tests only (AddressSanitizer + UBSan)
 ## Name search
 
 Names are matched ignoring case, either as the full name or as any single word of it.
-For example, `grace` finds "Grace Wanjiku". Each comparison uses `strcmp` on
+For example, `uwase` finds "Gisele Uwase". Each comparison uses `strcmp` on
 lowercase copies.
 
 ## Custom analysis

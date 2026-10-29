@@ -3,18 +3,21 @@
 #include "records.h"
 
 static const Student INITIAL_STUDENTS[] = {
-    {1001, "Aline Mukeshimana", "Embedded C", 84.5f},
-    {1002, "David Okello", "Embedded C", 47.0f},
-    {1003, "Fatima Diallo", "Embedded C", 91.0f},
-    {1004, "Kevin Ndayishimiye", "Data Structures", 58.5f},
-    {1005, "Grace Wanjiku", "Data Structures", 73.0f},
-    {1006, "Samuel Mensah", "Data Structures", 36.5f},
-    {1007, "Nadia Hakizimana", "Linear Algebra", 66.0f},
-    {1008, "Patrick Mugisha", "Linear Algebra", 52.0f},
-    {1009, "Esther Achieng", "Linear Algebra", 79.5f},
-    {1010, "Joseph Tuyisenge", "Web Design", 44.0f},
-    {1011, "Mariam Uwimana", "Web Design", 88.0f},
-    {1012, "Brian Kamau", "Web Design", 61.5f},
+    {1001, "Chico Mugisha", "Embedded C", 78.5f},
+    {1002, "Gisele Uwase", "Embedded C", 91.0f},
+    {1003, "Soleil Ishimwe", "Embedded C", 46.5f},
+    {1004, "Elina Uwimana", "Data Structures", 83.0f},
+    {1005, "Queen Ingabire", "Data Structures", 67.5f},
+    {1006, "Derick Habimana", "Data Structures", 38.0f},
+    {1007, "Nina Mutoni", "Linear Algebra", 72.0f},
+    {1008, "Bonheur Niyonzima", "Linear Algebra", 55.5f},
+    {1009, "Consolee Mukamana", "Linear Algebra", 88.5f},
+    {1010, "Manzi Byiringiro", "Web Design", 49.0f},
+    {1011, "Belyse Iradukunda", "Web Design", 94.5f},
+    {1012, "Muzungu Gatete", "Web Design", 61.0f},
+    {1013, "Geovanie Nshimiyimana", "Embedded C", 58.0f},
+    {1014, "Shukurani Hakizimana", "Data Structures", 75.5f},
+    {1015, "Allen Tuyishime", "Linear Algebra", 42.5f},
 };
 
 #define INITIAL_COUNT (sizeof INITIAL_STUDENTS / sizeof INITIAL_STUDENTS[0])

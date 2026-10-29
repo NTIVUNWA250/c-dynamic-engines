@@ -1,19 +1,49 @@
 2
 abc
 1
-1013
-Claire Iradukunda
-Embedded C
+1016
+Giselle Rukundo
+Web Design
 150
 -5
-68.5
+69
 1
-1013
+1016
 1
-1014
-Olivier Nshimiyimana
+1017
+Smiley Irakoze
+Embedded C
+81
+1
+1018
+Peace Umutoni
 Data Structures
-29
+52.5
+1
+1019
+Christella Uwera
+Linear Algebra
+90
+1
+1020
+Regine Niyonsaba
+Web Design
+35.5
+1
+1021
+Happy Kamanzi
+Embedded C
+64
+1
+1022
+Esther Ndayisaba
+Data Structures
+77
+1
+1023
+Vux Nkurunziza
+Linear Algebra
+86.5
 2
 3
 1
@@ -23,15 +53,17 @@ Data Structures
 5
 6
 1
-1013
+1019
 6
 2
-amina
+uwase
 6
 2
-grace
+Kevin
 7
-1013
+1020
+7
+1006
 7
 9999
 2
