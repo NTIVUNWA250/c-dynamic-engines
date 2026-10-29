@@ -1,9 +1,9 @@
 Student ID: NTIVUNWA250
 Project: Dynamic Academic Performance and Risk Analysis Engine
 Custom Analysis: Academic Risk Index
-Loaded 12 starting student records.
+Loaded 15 starting student records.
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -16,24 +16,26 @@ Loaded 12 starting student records.
 10. Exit
 Choose an option: 2
 
--- All students --
+All students:
 ID      Name                       Course                  Grade
-------- -------------------------- ---------------------- ------
-1001    Aline Mukeshimana          Embedded C               84.5
-1002    David Okello               Embedded C               47.0
-1003    Fatima Diallo              Embedded C               91.0
-1004    Kevin Ndayishimiye         Data Structures          58.5
-1005    Grace Wanjiku              Data Structures          73.0
-1006    Samuel Mensah              Data Structures          36.5
-1007    Nadia Hakizimana           Linear Algebra           66.0
-1008    Patrick Mugisha            Linear Algebra           52.0
-1009    Esther Achieng             Linear Algebra           79.5
-1010    Joseph Tuyisenge           Web Design               44.0
-1011    Mariam Uwimana             Web Design               88.0
-1012    Brian Kamau                Web Design               61.5
-Records: 12 (memory reserved for 12)
+1001    Chico Mugisha              Embedded C               78.5
+1002    Gisele Uwase               Embedded C               91.0
+1003    Soleil Ishimwe             Embedded C               46.5
+1004    Elina Uwimana              Data Structures          83.0
+1005    Queen Ingabire             Data Structures          67.5
+1006    Derick Habimana            Data Structures          38.0
+1007    Nina Mutoni                Linear Algebra           72.0
+1008    Bonheur Niyonzima          Linear Algebra           55.5
+1009    Consolee Mukamana          Linear Algebra           88.5
+1010    Manzi Byiringiro           Web Design               49.0
+1011    Belyse Iradukunda          Web Design               94.5
+1012    Muzungu Gatete             Web Design               61.0
+1013    Geovanie Nshimiyimana      Embedded C               58.0
+1014    Shukurani Hakizimana       Data Structures          75.5
+1015    Allen Tuyishime            Linear Algebra           42.5
+Records: 15 (memory reserved for 15)
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -48,18 +50,18 @@ Choose an option: abc
 Invalid input. Enter a whole number from 1 to 10.
 Choose an option: 1
 
--- Add a student --
-Student ID (1-999999): 1013
-Full name: Claire Iradukunda
-Course: Embedded C
+Add a student:
+Student ID (1-999999): 1016
+Full name: Giselle Rukundo
+Course: Web Design
 Grade (0-100): 150
 Invalid input. Enter a number from 0.0 to 100.0.
 Grade (0-100): -5
 Invalid input. Enter a number from 0.0 to 100.0.
-Grade (0-100): 68.5
-Student 1013 added. Total records: 13
+Grade (0-100): 69
+Student 1016 added. Total records: 16
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -72,11 +74,11 @@ Student 1013 added. Total records: 13
 10. Exit
 Choose an option: 1
 
--- Add a student --
-Student ID (1-999999): 1013
-Rejected: a student with ID 1013 already exists.
+Add a student:
+Student ID (1-999999): 1016
+Rejected: a student with ID 1016 already exists.
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -89,14 +91,134 @@ Rejected: a student with ID 1013 already exists.
 10. Exit
 Choose an option: 1
 
--- Add a student --
-Student ID (1-999999): 1014
-Full name: Olivier Nshimiyimana
+Add a student:
+Student ID (1-999999): 1017
+Full name: Smiley Irakoze
+Course: Embedded C
+Grade (0-100): 81
+Student 1017 added. Total records: 17
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1018
+Full name: Peace Umutoni
 Course: Data Structures
-Grade (0-100): 29
-Student 1014 added. Total records: 14
+Grade (0-100): 52.5
+Student 1018 added. Total records: 18
 
-========== Menu ==========
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1019
+Full name: Christella Uwera
+Course: Linear Algebra
+Grade (0-100): 90
+Student 1019 added. Total records: 19
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1020
+Full name: Regine Niyonsaba
+Course: Web Design
+Grade (0-100): 35.5
+Student 1020 added. Total records: 20
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1021
+Full name: Happy Kamanzi
+Course: Embedded C
+Grade (0-100): 64
+Student 1021 added. Total records: 21
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1022
+Full name: Esther Ndayisaba
+Course: Data Structures
+Grade (0-100): 77
+Student 1022 added. Total records: 22
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 1
+
+Add a student:
+Student ID (1-999999): 1023
+Full name: Vux Nkurunziza
+Course: Linear Algebra
+Grade (0-100): 86.5
+Student 1023 added. Total records: 23
+
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -109,26 +231,34 @@ Student 1014 added. Total records: 14
 10. Exit
 Choose an option: 2
 
--- All students --
+All students:
 ID      Name                       Course                  Grade
-------- -------------------------- ---------------------- ------
-1001    Aline Mukeshimana          Embedded C               84.5
-1002    David Okello               Embedded C               47.0
-1003    Fatima Diallo              Embedded C               91.0
-1004    Kevin Ndayishimiye         Data Structures          58.5
-1005    Grace Wanjiku              Data Structures          73.0
-1006    Samuel Mensah              Data Structures          36.5
-1007    Nadia Hakizimana           Linear Algebra           66.0
-1008    Patrick Mugisha            Linear Algebra           52.0
-1009    Esther Achieng             Linear Algebra           79.5
-1010    Joseph Tuyisenge           Web Design               44.0
-1011    Mariam Uwimana             Web Design               88.0
-1012    Brian Kamau                Web Design               61.5
-1013    Claire Iradukunda          Embedded C               68.5
-1014    Olivier Nshimiyimana       Data Structures          29.0
-Records: 14 (memory reserved for 24)
+1001    Chico Mugisha              Embedded C               78.5
+1002    Gisele Uwase               Embedded C               91.0
+1003    Soleil Ishimwe             Embedded C               46.5
+1004    Elina Uwimana              Data Structures          83.0
+1005    Queen Ingabire             Data Structures          67.5
+1006    Derick Habimana            Data Structures          38.0
+1007    Nina Mutoni                Linear Algebra           72.0
+1008    Bonheur Niyonzima          Linear Algebra           55.5
+1009    Consolee Mukamana          Linear Algebra           88.5
+1010    Manzi Byiringiro           Web Design               49.0
+1011    Belyse Iradukunda          Web Design               94.5
+1012    Muzungu Gatete             Web Design               61.0
+1013    Geovanie Nshimiyimana      Embedded C               58.0
+1014    Shukurani Hakizimana       Data Structures          75.5
+1015    Allen Tuyishime            Linear Algebra           42.5
+1016    Giselle Rukundo            Web Design               69.0
+1017    Smiley Irakoze             Embedded C               81.0
+1018    Peace Umutoni              Data Structures          52.5
+1019    Christella Uwera           Linear Algebra           90.0
+1020    Regine Niyonsaba           Web Design               35.5
+1021    Happy Kamanzi              Embedded C               64.0
+1022    Esther Ndayisaba           Data Structures          77.0
+1023    Vux Nkurunziza             Linear Algebra           86.5
+Records: 23 (memory reserved for 30)
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -141,31 +271,39 @@ Records: 14 (memory reserved for 24)
 10. Exit
 Choose an option: 3
 
--- Sort students --
+Sort students:
 1. Grade (highest first)
 2. Name (A to Z)
 3. Student ID (smallest first)
 Sort by: 1
 Sorted by Grade (highest first).
 ID      Name                       Course                  Grade
-------- -------------------------- ---------------------- ------
-1003    Fatima Diallo              Embedded C               91.0
-1011    Mariam Uwimana             Web Design               88.0
-1001    Aline Mukeshimana          Embedded C               84.5
-1009    Esther Achieng             Linear Algebra           79.5
-1005    Grace Wanjiku              Data Structures          73.0
-1013    Claire Iradukunda          Embedded C               68.5
-1007    Nadia Hakizimana           Linear Algebra           66.0
-1012    Brian Kamau                Web Design               61.5
-1004    Kevin Ndayishimiye         Data Structures          58.5
-1008    Patrick Mugisha            Linear Algebra           52.0
-1002    David Okello               Embedded C               47.0
-1010    Joseph Tuyisenge           Web Design               44.0
-1006    Samuel Mensah              Data Structures          36.5
-1014    Olivier Nshimiyimana       Data Structures          29.0
-Records: 14 (memory reserved for 24)
+1011    Belyse Iradukunda          Web Design               94.5
+1002    Gisele Uwase               Embedded C               91.0
+1019    Christella Uwera           Linear Algebra           90.0
+1009    Consolee Mukamana          Linear Algebra           88.5
+1023    Vux Nkurunziza             Linear Algebra           86.5
+1004    Elina Uwimana              Data Structures          83.0
+1017    Smiley Irakoze             Embedded C               81.0
+1001    Chico Mugisha              Embedded C               78.5
+1022    Esther Ndayisaba           Data Structures          77.0
+1014    Shukurani Hakizimana       Data Structures          75.5
+1007    Nina Mutoni                Linear Algebra           72.0
+1016    Giselle Rukundo            Web Design               69.0
+1005    Queen Ingabire             Data Structures          67.5
+1021    Happy Kamanzi              Embedded C               64.0
+1012    Muzungu Gatete             Web Design               61.0
+1013    Geovanie Nshimiyimana      Embedded C               58.0
+1008    Bonheur Niyonzima          Linear Algebra           55.5
+1018    Peace Umutoni              Data Structures          52.5
+1010    Manzi Byiringiro           Web Design               49.0
+1003    Soleil Ishimwe             Embedded C               46.5
+1015    Allen Tuyishime            Linear Algebra           42.5
+1006    Derick Habimana            Data Structures          38.0
+1020    Regine Niyonsaba           Web Design               35.5
+Records: 23 (memory reserved for 30)
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -178,31 +316,39 @@ Records: 14 (memory reserved for 24)
 10. Exit
 Choose an option: 3
 
--- Sort students --
+Sort students:
 1. Grade (highest first)
 2. Name (A to Z)
 3. Student ID (smallest first)
 Sort by: 2
 Sorted by Name (A to Z).
 ID      Name                       Course                  Grade
-------- -------------------------- ---------------------- ------
-1001    Aline Mukeshimana          Embedded C               84.5
-1012    Brian Kamau                Web Design               61.5
-1013    Claire Iradukunda          Embedded C               68.5
-1002    David Okello               Embedded C               47.0
-1009    Esther Achieng             Linear Algebra           79.5
-1003    Fatima Diallo              Embedded C               91.0
-1005    Grace Wanjiku              Data Structures          73.0
-1010    Joseph Tuyisenge           Web Design               44.0
-1004    Kevin Ndayishimiye         Data Structures          58.5
-1011    Mariam Uwimana             Web Design               88.0
-1007    Nadia Hakizimana           Linear Algebra           66.0
-1014    Olivier Nshimiyimana       Data Structures          29.0
-1008    Patrick Mugisha            Linear Algebra           52.0
-1006    Samuel Mensah              Data Structures          36.5
-Records: 14 (memory reserved for 24)
+1015    Allen Tuyishime            Linear Algebra           42.5
+1011    Belyse Iradukunda          Web Design               94.5
+1008    Bonheur Niyonzima          Linear Algebra           55.5
+1001    Chico Mugisha              Embedded C               78.5
+1019    Christella Uwera           Linear Algebra           90.0
+1009    Consolee Mukamana          Linear Algebra           88.5
+1006    Derick Habimana            Data Structures          38.0
+1004    Elina Uwimana              Data Structures          83.0
+1022    Esther Ndayisaba           Data Structures          77.0
+1013    Geovanie Nshimiyimana      Embedded C               58.0
+1002    Gisele Uwase               Embedded C               91.0
+1016    Giselle Rukundo            Web Design               69.0
+1021    Happy Kamanzi              Embedded C               64.0
+1010    Manzi Byiringiro           Web Design               49.0
+1012    Muzungu Gatete             Web Design               61.0
+1007    Nina Mutoni                Linear Algebra           72.0
+1018    Peace Umutoni              Data Structures          52.5
+1005    Queen Ingabire             Data Structures          67.5
+1020    Regine Niyonsaba           Web Design               35.5
+1014    Shukurani Hakizimana       Data Structures          75.5
+1017    Smiley Irakoze             Embedded C               81.0
+1003    Soleil Ishimwe             Embedded C               46.5
+1023    Vux Nkurunziza             Linear Algebra           86.5
+Records: 23 (memory reserved for 30)
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -214,9 +360,9 @@ Records: 14 (memory reserved for 24)
  9. Display summary report
 10. Exit
 Choose an option: 4
-Average grade of 14 students: 62.79
+Average grade of 23 students: 67.67
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -231,10 +377,9 @@ Choose an option: 5
 
 Top-performing student:
 ID      Name                       Course                  Grade
-------- -------------------------- ---------------------- ------
-1003    Fatima Diallo              Embedded C               91.0
+1011    Belyse Iradukunda          Web Design               94.5
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -247,16 +392,15 @@ ID      Name                       Course                  Grade
 10. Exit
 Choose an option: 6
 
--- Search --
+Search:
 1. By student ID
 2. By name
 Search by: 1
-Student ID: 1013
+Student ID: 1019
 ID      Name                       Course                  Grade
-------- -------------------------- ---------------------- ------
-1013    Claire Iradukunda          Embedded C               68.5
+1019    Christella Uwera           Linear Algebra           90.0
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -269,37 +413,36 @@ ID      Name                       Course                  Grade
 10. Exit
 Choose an option: 6
 
--- Search --
+Search:
 1. By student ID
 2. By name
 Search by: 2
-Name, first name or surname: amina
-No student named "amina".
-
-========== Menu ==========
- 1. Add a new student
- 2. Display all students
- 3. Sort students
- 4. Calculate average grade
- 5. Find top-performing student
- 6. Search for a student
- 7. Remove a student
- 8. Run custom analysis (Academic Risk Index)
- 9. Display summary report
-10. Exit
-Choose an option: 6
-
--- Search --
-1. By student ID
-2. By name
-Search by: 2
-Name, first name or surname: grace
+Name, first name or surname: uwase
 ID      Name                       Course                  Grade
-------- -------------------------- ---------------------- ------
-1005    Grace Wanjiku              Data Structures          73.0
+1002    Gisele Uwase               Embedded C               91.0
 1 match(es).
 
-========== Menu ==========
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 6
+
+Search:
+1. By student ID
+2. By name
+Search by: 2
+Name, first name or surname: Kevin
+No student named "Kevin".
+
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -312,11 +455,11 @@ ID      Name                       Course                  Grade
 10. Exit
 Choose an option: 7
 
--- Remove a student --
-Student ID to remove: 1013
-Student 1013 removed. Total records: 13
+Remove a student:
+Student ID to remove: 1020
+Student 1020 removed. Total records: 22
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -329,11 +472,28 @@ Student 1013 removed. Total records: 13
 10. Exit
 Choose an option: 7
 
--- Remove a student --
+Remove a student:
+Student ID to remove: 1006
+Student 1006 removed. Total records: 21
+
+Menu
+ 1. Add a new student
+ 2. Display all students
+ 3. Sort students
+ 4. Calculate average grade
+ 5. Find top-performing student
+ 6. Search for a student
+ 7. Remove a student
+ 8. Run custom analysis (Academic Risk Index)
+ 9. Display summary report
+10. Exit
+Choose an option: 7
+
+Remove a student:
 Student ID to remove: 9999
 No student with ID 9999, nothing removed.
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -346,25 +506,32 @@ No student with ID 9999, nothing removed.
 10. Exit
 Choose an option: 2
 
--- All students --
+All students:
 ID      Name                       Course                  Grade
-------- -------------------------- ---------------------- ------
-1001    Aline Mukeshimana          Embedded C               84.5
-1012    Brian Kamau                Web Design               61.5
-1002    David Okello               Embedded C               47.0
-1009    Esther Achieng             Linear Algebra           79.5
-1003    Fatima Diallo              Embedded C               91.0
-1005    Grace Wanjiku              Data Structures          73.0
-1010    Joseph Tuyisenge           Web Design               44.0
-1004    Kevin Ndayishimiye         Data Structures          58.5
-1011    Mariam Uwimana             Web Design               88.0
-1007    Nadia Hakizimana           Linear Algebra           66.0
-1014    Olivier Nshimiyimana       Data Structures          29.0
-1008    Patrick Mugisha            Linear Algebra           52.0
-1006    Samuel Mensah              Data Structures          36.5
-Records: 13 (memory reserved for 24)
+1015    Allen Tuyishime            Linear Algebra           42.5
+1011    Belyse Iradukunda          Web Design               94.5
+1008    Bonheur Niyonzima          Linear Algebra           55.5
+1001    Chico Mugisha              Embedded C               78.5
+1019    Christella Uwera           Linear Algebra           90.0
+1009    Consolee Mukamana          Linear Algebra           88.5
+1004    Elina Uwimana              Data Structures          83.0
+1022    Esther Ndayisaba           Data Structures          77.0
+1013    Geovanie Nshimiyimana      Embedded C               58.0
+1002    Gisele Uwase               Embedded C               91.0
+1016    Giselle Rukundo            Web Design               69.0
+1021    Happy Kamanzi              Embedded C               64.0
+1010    Manzi Byiringiro           Web Design               49.0
+1012    Muzungu Gatete             Web Design               61.0
+1007    Nina Mutoni                Linear Algebra           72.0
+1018    Peace Umutoni              Data Structures          52.5
+1005    Queen Ingabire             Data Structures          67.5
+1014    Shukurani Hakizimana       Data Structures          75.5
+1017    Smiley Irakoze             Embedded C               81.0
+1003    Soleil Ishimwe             Embedded C               46.5
+1023    Vux Nkurunziza             Linear Algebra           86.5
+Records: 21 (memory reserved for 30)
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -380,25 +547,33 @@ Choose an option: 8
 Academic Risk Index (0 = no risk, 100 = highest risk)
 ARI = 70 x max(0, 60 - grade)/60 + 30 x max(0, course avg - grade)/100
 ID      Name                      Grade Course avg    ARI  Band    
-1001    Aline Mukeshimana          84.5       74.2    0.0  None    
-1012    Brian Kamau                61.5       64.5    0.9  Low     
-1002    David Okello               47.0       74.2   23.3  Moderate
-1009    Esther Achieng             79.5       65.8    0.0  None    
-1003    Fatima Diallo              91.0       74.2    0.0  None    
-1005    Grace Wanjiku              73.0       49.2    0.0  None    
-1010    Joseph Tuyisenge           44.0       64.5   24.8  Moderate
-1004    Kevin Ndayishimiye         58.5       49.2    1.8  Low     
-1011    Mariam Uwimana             88.0       64.5    0.0  None    
-1007    Nadia Hakizimana           66.0       65.8    0.0  None    
-1014    Olivier Nshimiyimana       29.0       49.2   42.2  High    
-1008    Patrick Mugisha            52.0       65.8   13.5  Moderate
-1006    Samuel Mensah              36.5       49.2   31.2  High    
-Risk bands: None 6 | Low 2 | Moderate 3 | High 2
-Mean risk index: 10.6
-Most at risk: Olivier Nshimiyimana (ID 1014), index 42.2
+1015    Allen Tuyishime            42.5       72.5   29.4  High    
+1011    Belyse Iradukunda          94.5       68.4    0.0  None    
+1008    Bonheur Niyonzima          55.5       72.5   10.4  Moderate
+1001    Chico Mugisha              78.5       69.8    0.0  None    
+1019    Christella Uwera           90.0       72.5    0.0  None    
+1009    Consolee Mukamana          88.5       72.5    0.0  None    
+1004    Elina Uwimana              83.0       71.1    0.0  None    
+1022    Esther Ndayisaba           77.0       71.1    0.0  None    
+1013    Geovanie Nshimiyimana      58.0       69.8    5.9  Low     
+1002    Gisele Uwase               91.0       69.8    0.0  None    
+1016    Giselle Rukundo            69.0       68.4    0.0  None    
+1021    Happy Kamanzi              64.0       69.8    1.8  Low     
+1010    Manzi Byiringiro           49.0       68.4   18.6  Moderate
+1012    Muzungu Gatete             61.0       68.4    2.2  Low     
+1007    Nina Mutoni                72.0       72.5    0.1  Low     
+1018    Peace Umutoni              52.5       71.1   14.3  Moderate
+1005    Queen Ingabire             67.5       71.1    1.1  Low     
+1014    Shukurani Hakizimana       75.5       71.1    0.0  None    
+1017    Smiley Irakoze             81.0       69.8    0.0  None    
+1003    Soleil Ishimwe             46.5       69.8   22.8  Moderate
+1023    Vux Nkurunziza             86.5       72.5    0.0  None    
+Risk bands: None 11 | Low 5 | Moderate 4 | High 1
+Mean risk index: 5.1
+Most at risk: Allen Tuyishime (ID 1015), index 29.4
 Bands: None = 0, Low < 10, Moderate < 25, High >= 25.
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
@@ -411,22 +586,21 @@ Bands: None = 0, Low < 10, Moderate < 25, High >= 25.
 10. Exit
 Choose an option: 9
 
-===== Summary Report =====
-Total student records: 13
-Average grade: 62.35
-Highest grade: 91.0 (Fatima Diallo, ID 1003)
-Lowest grade: 29.0 (Olivier Nshimiyimana, ID 1014)
+Summary Report
+Total student records: 21
+Average grade: 70.62
+Highest grade: 94.5 (Belyse Iradukunda, ID 1011)
+Lowest grade: 42.5 (Allen Tuyishime, ID 1015)
 Pass mark: 50
-Students passing (>= 50): 9
-Students below pass mark: 4
+Students passing (>= 50): 18
+Students below pass mark: 3
 
 Custom analysis - Academic Risk Index
-Risk bands: None 6 | Low 2 | Moderate 3 | High 2
-Mean risk index: 10.6
-Most at risk: Olivier Nshimiyimana (ID 1014), index 42.2
-==========================
+Risk bands: None 11 | Low 5 | Moderate 4 | High 1
+Mean risk index: 5.1
+Most at risk: Allen Tuyishime (ID 1015), index 29.4
 
-========== Menu ==========
+Menu
  1. Add a new student
  2. Display all students
  3. Sort students
