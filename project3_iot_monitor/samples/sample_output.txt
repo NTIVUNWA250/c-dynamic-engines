@@ -1,0 +1,349 @@
+Student ID: NTIVUNWA250
+Project: Dynamic IoT Event Monitoring and Callback Engine
+Custom Callback: Sensor Drift Detector
+Random seed: 42 (fixed)
+Registered 6 starting devices.
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 2
+
+Registered devices:
+ID     Name                     Type         Last value   Status   Readings
+101    Greenhouse air temp      Temperature  -            IDLE     0
+102    Poultry house temp       Temperature  -            IDLE     0
+201    Irrigation main line     Pressure     -            IDLE     0
+202    Drip line pressure       Pressure     -            IDLE     0
+301    Solar pump battery       Battery      -            IDLE     0
+302    Weather station battery  Battery      -            IDLE     0
+Devices: 6 (memory reserved for 6)
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 4
+Each round gives every device one new reading (6 per round).
+Rounds (1-50): 2
+Generated 12 readings. 12 waiting to be processed.
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 5
+
+Processing readings through callbacks:
+#    ID     Device                   Type         Value      Callback             Result
+1    101    Greenhouse air temp      Temperature  16.0 C     temperature_monitor  NORMAL (range 15-45 C)
+2    102    Poultry house temp       Temperature  24.9 C     temperature_monitor  NORMAL (range 15-45 C)
+3    201    Irrigation main line     Pressure     1019 hPa   pressure_monitor     NORMAL (range 950-1050 hPa)
+4    202    Drip line pressure       Pressure     992 hPa    pressure_monitor     NORMAL (range 950-1050 hPa)
+5    301    Solar pump battery       Battery      3.49 V     battery_monitor      NORMAL (range 3.3-4.2 V)
+6    302    Weather station battery  Battery      3.53 V     battery_monitor      NORMAL (range 3.3-4.2 V)
+7    101    Greenhouse air temp      Temperature  22.5 C     temperature_monitor  NORMAL (range 15-45 C)
+8    102    Poultry house temp       Temperature  20.0 C     temperature_monitor  NORMAL (range 15-45 C)
+9    201    Irrigation main line     Pressure     1035 hPa   pressure_monitor     NORMAL (range 950-1050 hPa)
+10   202    Drip line pressure       Pressure     968 hPa    pressure_monitor     NORMAL (range 950-1050 hPa)
+11   301    Solar pump battery       Battery      3.63 V     battery_monitor      NORMAL (range 3.3-4.2 V)
+12   302    Weather station battery  Battery      3.58 V     battery_monitor      NORMAL (range 3.3-4.2 V)
+Processed 12 readings.
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 1
+
+Register a device:
+Device ID (1-99999): 401
+Device name: Seedling room temp
+1. Temperature sensor
+2. Pressure sensor
+3. Battery voltage monitor
+Type: 1
+Device 401 registered. Total devices: 7
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 1
+
+Register a device:
+Device ID (1-99999): 401
+Rejected: a device with ID 401 already exists.
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 1
+
+Register a device:
+Device ID (1-99999): 0
+Invalid input. Enter a whole number from 1 to 99999.
+Device ID (1-99999): 402
+Device name: Soil sensor battery
+1. Temperature sensor
+2. Pressure sensor
+3. Battery voltage monitor
+Type: 3
+Device 402 registered. Total devices: 8
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 4
+Each round gives every device one new reading (8 per round).
+Rounds (1-50): 1
+Generated 8 readings. 8 waiting to be processed.
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 3
+
+Remove a device:
+Device ID to remove: 202
+Device 202 removed. Total devices: 7
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 3
+
+Remove a device:
+Device ID to remove: 999
+No device with ID 999, nothing removed.
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 5
+
+Processing readings through callbacks:
+#    ID     Device                   Type         Value      Callback             Result
+1    101    Greenhouse air temp      Temperature  26.5 C     temperature_monitor  NORMAL (range 15-45 C)
+2    102    Poultry house temp       Temperature  18.1 C     temperature_monitor  NORMAL (range 15-45 C)
+3    201    Irrigation main line     Pressure     1147 hPa   pressure_monitor     ALERT: over-pressure: risk of pipe or seal damage
+                                                             drift_detector       DRIFT: sudden rise of 112.00 hPa since the last reading (limit 60.00)
+     reading for device 202 skipped: device was removed
+4    301    Solar pump battery       Battery      2.90 V     battery_monitor      ALERT: low voltage: battery nearly flat, device may shut down
+                                                             drift_detector       DRIFT: sudden drop of 0.73 V since the last reading (limit 0.35)
+5    302    Weather station battery  Battery      3.74 V     battery_monitor      NORMAL (range 3.3-4.2 V)
+6    401    Seedling room temp       Temperature  42.4 C     temperature_monitor  NORMAL (range 15-45 C)
+7    402    Soil sensor battery      Battery      4.17 V     battery_monitor      NORMAL (range 3.3-4.2 V)
+Processed 7 readings, skipped 1 for removed devices.
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 4
+Each round gives every device one new reading (7 per round).
+Rounds (1-50): 1
+Generated 7 readings. 7 waiting to be processed.
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 5
+
+Processing readings through callbacks:
+#    ID     Device                   Type         Value      Callback             Result
+1    101    Greenhouse air temp      Temperature  13.0 C     temperature_monitor  ALERT: too cold: below the safe operating range
+                                                             drift_detector       DRIFT: sudden drop of 13.56 C since the last reading (limit 10.00)
+2    102    Poultry house temp       Temperature  25.7 C     temperature_monitor  NORMAL (range 15-45 C)
+3    201    Irrigation main line     Pressure     1150 hPa   pressure_monitor     ALERT: over-pressure: risk of pipe or seal damage
+4    301    Solar pump battery       Battery      2.94 V     battery_monitor      ALERT: low voltage: battery nearly flat, device may shut down
+5    302    Weather station battery  Battery      3.73 V     battery_monitor      NORMAL (range 3.3-4.2 V)
+6    401    Seedling room temp       Temperature  46.5 C     temperature_monitor  ALERT: overheating: above the safe operating range
+7    402    Soil sensor battery      Battery      4.28 V     battery_monitor      ALERT: over-voltage: charging fault, battery may be damaged
+Processed 7 readings.
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 2
+
+Registered devices:
+ID     Name                     Type         Last value   Status   Readings
+101    Greenhouse air temp      Temperature  13.0 C       ALERT    4
+102    Poultry house temp       Temperature  25.7 C       NORMAL   4
+201    Irrigation main line     Pressure     1150 hPa     ALERT    4
+301    Solar pump battery       Battery      2.94 V       ALERT    4
+302    Weather station battery  Battery      3.73 V       NORMAL   4
+401    Seedling room temp       Temperature  46.5 C       ALERT    2
+402    Soil sensor battery      Battery      4.28 V       ALERT    2
+Devices: 7 (memory reserved for 12)
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 6
+
+Alerts (10):
+[1] Device 201 "Irrigation main line" (Pressure)
+     Reading: 1147.00 hPa | Expected: 950.00 to 1050.00 hPa
+     Reason: over-pressure: risk of pipe or seal damage
+     Callback: pressure_monitor
+[2] Device 201 "Irrigation main line" (Pressure)
+     Reading: 1147.00 hPa | Expected: 975.00 to 1095.00 hPa
+     Reason: sudden rise of 112.00 hPa since the last reading
+     Callback: drift_detector
+[3] Device 301 "Solar pump battery" (Battery)
+     Reading: 2.90 V | Expected: 3.30 to 4.20 V
+     Reason: low voltage: battery nearly flat, device may shut down
+     Callback: battery_monitor
+[4] Device 301 "Solar pump battery" (Battery)
+     Reading: 2.90 V | Expected: 3.28 to 3.98 V
+     Reason: sudden drop of 0.73 V since the last reading
+     Callback: drift_detector
+[5] Device 101 "Greenhouse air temp" (Temperature)
+     Reading: 12.96 C | Expected: 15.00 to 45.00 C
+     Reason: too cold: below the safe operating range
+     Callback: temperature_monitor
+[6] Device 101 "Greenhouse air temp" (Temperature)
+     Reading: 12.96 C | Expected: 16.52 to 36.52 C
+     Reason: sudden drop of 13.56 C since the last reading
+     Callback: drift_detector
+[7] Device 201 "Irrigation main line" (Pressure)
+     Reading: 1150.00 hPa | Expected: 950.00 to 1050.00 hPa
+     Reason: over-pressure: risk of pipe or seal damage
+     Callback: pressure_monitor
+[8] Device 301 "Solar pump battery" (Battery)
+     Reading: 2.94 V | Expected: 3.30 to 4.20 V
+     Reason: low voltage: battery nearly flat, device may shut down
+     Callback: battery_monitor
+[9] Device 401 "Seedling room temp" (Temperature)
+     Reading: 46.45 C | Expected: 15.00 to 45.00 C
+     Reason: overheating: above the safe operating range
+     Callback: temperature_monitor
+[10] Device 402 "Soil sensor battery" (Battery)
+     Reading: 4.28 V | Expected: 3.30 to 4.20 V
+     Reason: over-voltage: charging fault, battery may be damaged
+     Callback: battery_monitor
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 7
+
+Monitoring Summary
+Registered devices: 7
+Readings processed: 26
+Normal readings: 19
+Abnormal readings: 7
+Readings still waiting: 0
+Readings skipped (device removed): 1
+
+Out-of-range alerts per device type:
+  Temperature  2
+  Pressure     2
+  Battery      3
+
+Custom callback - Sensor Drift Detector:
+  Drift checks: 26, drift alerts: 3
+  Temperature  1 (limit 10.00 C per reading)
+  Pressure     1 (limit 60.00 hPa per reading)
+  Battery      1 (limit 0.35 V per reading)
+  Largest jump: device 301 changed by -0.73 (208% of its limit)
+Total alerts logged: 10
+
+Menu
+1. Register a new device
+2. Display all devices
+3. Remove a device
+4. Generate simulated readings
+5. Process readings through callbacks
+6. Display alerts
+7. Monitoring summary
+8. Exit
+Choose an option: 8
+All memory released. Goodbye.
