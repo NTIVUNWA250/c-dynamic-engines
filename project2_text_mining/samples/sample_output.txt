@@ -1,9 +1,9 @@
 Student ID: NTIVUNWA250
 Project: Dynamic Text Mining and Linguistic Pattern Analyzer
-Source: Moby-Dick; or, The Whale
-Details: Herman Melville, 1851. Chapter 1, "Loomings", opening paragraph (public domain)
+Source: From an African Oral Tale to an English Picture Book: Rwandan Teachers' Experience with Online Translation of South African Institute of Distance Education's African Storybooks
+Details: Epimaque Niyibizi, Emmanuel Sibomana, Aloysie Uwizeyemariya, Sylvestre Ntabajyana and Cyprien Niyomugabo (University of Rwanda - College of Education). Teacher Education through Flexible Learning in Africa, Vol 1 No 1, 2019. Abstract. DOI 10.35293/tetfle.v1i1.66. Licence: CC BY 4.0
 Custom Analysis: Lexical Diversity Score
-Loaded the built-in paragraph: 201 words, 134 distinct.
+Loaded the built-in paragraph: 328 words, 167 distinct.
 
 Menu
  1. Enter or paste a new paragraph
@@ -19,8 +19,8 @@ Menu
 11. Show the current paragraph and source
 12. Exit
 Choose an option: 2
-Total words: 201
-Distinct words: 134
+Total words: 328
+Distinct words: 167
 
 Menu
  1. Enter or paste a new paragraph
@@ -36,7 +36,7 @@ Menu
 11. Show the current paragraph and source
 12. Exit
 Choose an option: 3
-Longest word: "involuntarily" (13 characters)
+Longest word: "rwanda-college" (14 characters)
 
 Menu
  1. Enter or paste a new paragraph
@@ -52,7 +52,7 @@ Menu
 11. Show the current paragraph and source
 12. Exit
 Choose an option: 4
-Most frequent word: "the", 10 times (5.0% of all words)
+Most frequent word: "the", 18 times (5.5% of all words)
 
 Menu
  1. Enter or paste a new paragraph
@@ -73,141 +73,174 @@ Choose an option: 6
 Sort: 2
 Word statistics sorted By frequency (most frequent first).
 #     Word                                     Count
-1     the                                         10
-2     i                                            9
-3     and                                          7
-4     a                                            5
-5     it                                           5
-6     me                                           5
-7     to                                           5
-8     in                                           4
-9     is                                           4
-10    my                                           4
-11    of                                           4
-12    whenever                                     4
-13    about                                        2
-14    as                                           2
-15    find                                         2
-16    get                                          2
-17    little                                       2
-18    myself                                       2
-19    nothing                                      2
-20    off                                          2
-21    or                                           2
-22    some                                         2
-23    this                                         2
-24    time                                         2
-25    with                                         2
-26    account                                      1
-27    ago                                          1
-28    all                                          1
-29    almost                                       1
-30    an                                           1
-31    ball                                         1
-32    before                                       1
-33    bringing                                     1
-34    but                                          1
-35    call                                         1
-36    can                                          1
-37    cato                                         1
-38    cherish                                      1
-39    circulation                                  1
-40    coffin                                       1
-41    damp                                         1
-42    degree                                       1
-43    deliberately                                 1
-44    driving                                      1
-45    drizzly                                      1
-46    especially                                   1
-47    every                                        1
-48    feelings                                     1
-49    flourish                                     1
-50    for                                          1
-51    from                                         1
-52    funeral                                      1
-53    grim                                         1
-54    growing                                      1
-55    hand                                         1
-56    hats                                         1
-57    have                                         1
-58    having                                       1
-59    high                                         1
-60    himself                                      1
-61    his                                          1
-62    how                                          1
-63    hypos                                        1
-64    if                                           1
-65    interest                                     1
-66    into                                         1
-67    involuntarily                                1
-68    ishmael                                      1
-69    knew                                         1
-70    knocking                                     1
-71    long                                         1
-72    meet                                         1
-73    men                                          1
-74    methodically                                 1
-75    mind                                         1
-76    money                                        1
-77    moral                                        1
-78    mouth                                        1
-79    nearly                                       1
-80    never                                        1
-81    no                                           1
-82    november                                     1
-83    ocean                                        1
-84    on                                           1
-85    other                                        1
-86    part                                         1
-87    particular                                   1
-88    pausing                                      1
-89    people's                                     1
-90    philosophical                                1
-91    pistol                                       1
-92    precisely                                    1
-93    prevent                                      1
-94    principle                                    1
-95    purse                                        1
-96    quietly                                      1
-97    rear                                         1
-98    regulating                                   1
-99    requires                                     1
-100   sail                                         1
-101   same                                         1
-102   sea                                          1
-103   see                                          1
-104   ship                                         1
-105   shore                                        1
-106   soon                                         1
-107   soul                                         1
-108   spleen                                       1
-109   stepping                                     1
-110   street                                       1
-111   strong                                       1
-112   substitute                                   1
-113   such                                         1
-114   surprising                                   1
-115   sword                                        1
-116   take                                         1
-117   that                                         1
-118   their                                        1
-119   then                                         1
-120   there                                        1
-121   they                                         1
-122   thought                                      1
-123   throws                                       1
-124   towards                                      1
-125   up                                           1
-126   upon                                         1
-127   upper                                        1
-128   very                                         1
-129   warehouses                                   1
-130   watery                                       1
-131   way                                          1
-132   world                                        1
-133   would                                        1
-134   years                                        1
-134 distinct words, 201 words in total.
+1     the                                         18
+2     and                                         15
+3     in                                          15
+4     of                                          12
+5     african                                     11
+6     to                                           8
+7     languages                                    7
+8     reading                                      7
+9     a                                            6
+10    kinyarwanda                                  5
+11    on                                           5
+12    translated                                   5
+13    stories                                      4
+14    between                                      3
+15    children                                     3
+16    education                                    3
+17    english                                      3
+18    for                                          3
+19    from                                         3
+20    is                                           3
+21    original                                     3
+22    storybook                                    3
+23    storybooks                                   3
+24    versions                                     3
+25    website                                      3
+26    were                                         3
+27    are                                          2
+28    as                                           2
+29    challenge                                    2
+30    differences                                  2
+31    distance                                     2
+32    during                                       2
+33    early                                        2
+34    educators                                    2
+35    enjoyable                                    2
+36    grade                                        2
+37    levels                                       2
+38    more                                         2
+39    observed                                     2
+40    online                                       2
+41    other                                        2
+42    paper                                        2
+43    participants                                 2
+44    shortage                                     2
+45    skills                                       2
+46    some                                         2
+47    teacher                                      2
+48    teachers                                     2
+49    than                                         2
+50    that                                         2
+51    their                                        2
+52    there                                        2
+53    this                                         2
+54    translation                                  2
+55    which                                        2
+56    workshop                                     2
+57    100                                          1
+58    32                                           1
+59    ability                                      1
+60    activities                                   1
+61    adaptation                                   1
+62    adapting                                     1
+63    addressing                                   1
+64    africa                                       1
+65    agglutinating                                1
+66    agglutinative                                1
+67    all                                          1
+68    although                                     1
+69    available                                    1
+70    based                                        1
+71    bear                                         1
+72    by                                           1
+73    can                                          1
+74    care                                         1
+75    challenges                                   1
+76    clashes                                      1
+77    collected                                    1
+78    contexts                                     1
+79    contributes                                  1
+80    created                                      1
+81    critical                                     1
+82    cultural                                     1
+83    data                                         1
+84    determining                                  1
+85    development                                  1
+86    digital                                      1
+87    education's                                  1
+88    encountered                                  1
+89    experiences                                  1
+90    features                                     1
+91    filled                                       1
+92    finding                                      1
+93    findings                                     1
+94    firstly                                      1
+95    folktales                                    1
+96    foreignization                               1
+97    found                                        1
+98    graded                                       1
+99    have                                         1
+100   high                                         1
+101   implications                                 1
+102   initiative                                   1
+103   institute                                    1
+104   interventions                                1
+105   interviewed                                  1
+106   into                                         1
+107   investigating                                1
+108   it                                           1
+109   key                                          1
+110   lack                                         1
+111   language                                     1
+112   length                                       1
+113   lesson                                       1
+114   level                                        1
+115   literacy                                     1
+116   maintain                                     1
+117   make                                         1
+118   materials                                    1
+119   meaning                                      1
+120   mind                                         1
+121   moral                                        1
+122   offered                                      1
+123   opportunities                                1
+124   participated                                 1
+125   partnership                                  1
+126   pertaining                                   1
+127   picture                                      1
+128   point                                        1
+129   practice                                     1
+130   process                                      1
+131   provides                                     1
+132   published                                    1
+133   questionnaire                                1
+134   readers                                      1
+135   recommends                                   1
+136   reflecting                                   1
+137   reinforcing                                  1
+138   requires                                     1
+139   research                                     1
+140   researchers                                  1
+141   revealed                                     1
+142   rwanda                                       1
+143   rwanda-college                               1
+144   rwandan                                      1
+145   saide                                        1
+146   schools                                      1
+147   since                                        1
+148   south                                        1
+149   special                                      1
+150   specificity                                  1
+151   story                                        1
+152   such                                         1
+153   support                                      1
+154   tale                                         1
+155   teaching                                     1
+156   ten                                          1
+157   them                                         1
+158   then                                         1
+159   they                                         1
+160   thinking                                     1
+161   translating                                  1
+162   translators                                  1
+163   university                                   1
+164   well                                         1
+165   who                                          1
+166   with                                         1
+167   written                                      1
+167 distinct words, 328 words in total.
 
 Menu
  1. Enter or paste a new paragraph
@@ -228,141 +261,174 @@ Choose an option: 6
 Sort: 1
 Word statistics sorted Alphabetically (a to z).
 #     Word                                     Count
-1     a                                            5
-2     about                                        2
-3     account                                      1
-4     ago                                          1
-5     all                                          1
-6     almost                                       1
-7     an                                           1
-8     and                                          7
-9     as                                           2
-10    ball                                         1
-11    before                                       1
-12    bringing                                     1
-13    but                                          1
-14    call                                         1
-15    can                                          1
-16    cato                                         1
-17    cherish                                      1
-18    circulation                                  1
-19    coffin                                       1
-20    damp                                         1
-21    degree                                       1
-22    deliberately                                 1
-23    driving                                      1
-24    drizzly                                      1
-25    especially                                   1
-26    every                                        1
-27    feelings                                     1
-28    find                                         2
-29    flourish                                     1
-30    for                                          1
-31    from                                         1
-32    funeral                                      1
-33    get                                          2
-34    grim                                         1
-35    growing                                      1
-36    hand                                         1
-37    hats                                         1
-38    have                                         1
-39    having                                       1
-40    high                                         1
-41    himself                                      1
-42    his                                          1
-43    how                                          1
-44    hypos                                        1
-45    i                                            9
-46    if                                           1
-47    in                                           4
-48    interest                                     1
-49    into                                         1
-50    involuntarily                                1
-51    is                                           4
-52    ishmael                                      1
-53    it                                           5
-54    knew                                         1
-55    knocking                                     1
-56    little                                       2
-57    long                                         1
-58    me                                           5
-59    meet                                         1
-60    men                                          1
-61    methodically                                 1
-62    mind                                         1
-63    money                                        1
-64    moral                                        1
-65    mouth                                        1
-66    my                                           4
-67    myself                                       2
-68    nearly                                       1
-69    never                                        1
-70    no                                           1
-71    nothing                                      2
-72    november                                     1
-73    ocean                                        1
-74    of                                           4
-75    off                                          2
-76    on                                           1
-77    or                                           2
-78    other                                        1
-79    part                                         1
-80    particular                                   1
-81    pausing                                      1
-82    people's                                     1
-83    philosophical                                1
-84    pistol                                       1
-85    precisely                                    1
-86    prevent                                      1
-87    principle                                    1
-88    purse                                        1
-89    quietly                                      1
-90    rear                                         1
-91    regulating                                   1
-92    requires                                     1
-93    sail                                         1
-94    same                                         1
-95    sea                                          1
-96    see                                          1
-97    ship                                         1
-98    shore                                        1
-99    some                                         2
-100   soon                                         1
-101   soul                                         1
-102   spleen                                       1
-103   stepping                                     1
-104   street                                       1
-105   strong                                       1
-106   substitute                                   1
-107   such                                         1
-108   surprising                                   1
-109   sword                                        1
-110   take                                         1
-111   that                                         1
-112   the                                         10
-113   their                                        1
-114   then                                         1
-115   there                                        1
-116   they                                         1
-117   this                                         2
-118   thought                                      1
-119   throws                                       1
-120   time                                         2
-121   to                                           5
-122   towards                                      1
-123   up                                           1
-124   upon                                         1
-125   upper                                        1
-126   very                                         1
-127   warehouses                                   1
-128   watery                                       1
-129   way                                          1
-130   whenever                                     4
-131   with                                         2
-132   world                                        1
-133   would                                        1
-134   years                                        1
-134 distinct words, 201 words in total.
+1     100                                          1
+2     32                                           1
+3     a                                            6
+4     ability                                      1
+5     activities                                   1
+6     adaptation                                   1
+7     adapting                                     1
+8     addressing                                   1
+9     africa                                       1
+10    african                                     11
+11    agglutinating                                1
+12    agglutinative                                1
+13    all                                          1
+14    although                                     1
+15    and                                         15
+16    are                                          2
+17    as                                           2
+18    available                                    1
+19    based                                        1
+20    bear                                         1
+21    between                                      3
+22    by                                           1
+23    can                                          1
+24    care                                         1
+25    challenge                                    2
+26    challenges                                   1
+27    children                                     3
+28    clashes                                      1
+29    collected                                    1
+30    contexts                                     1
+31    contributes                                  1
+32    created                                      1
+33    critical                                     1
+34    cultural                                     1
+35    data                                         1
+36    determining                                  1
+37    development                                  1
+38    differences                                  2
+39    digital                                      1
+40    distance                                     2
+41    during                                       2
+42    early                                        2
+43    education                                    3
+44    education's                                  1
+45    educators                                    2
+46    encountered                                  1
+47    english                                      3
+48    enjoyable                                    2
+49    experiences                                  1
+50    features                                     1
+51    filled                                       1
+52    finding                                      1
+53    findings                                     1
+54    firstly                                      1
+55    folktales                                    1
+56    for                                          3
+57    foreignization                               1
+58    found                                        1
+59    from                                         3
+60    grade                                        2
+61    graded                                       1
+62    have                                         1
+63    high                                         1
+64    implications                                 1
+65    in                                          15
+66    initiative                                   1
+67    institute                                    1
+68    interventions                                1
+69    interviewed                                  1
+70    into                                         1
+71    investigating                                1
+72    is                                           3
+73    it                                           1
+74    key                                          1
+75    kinyarwanda                                  5
+76    lack                                         1
+77    language                                     1
+78    languages                                    7
+79    length                                       1
+80    lesson                                       1
+81    level                                        1
+82    levels                                       2
+83    literacy                                     1
+84    maintain                                     1
+85    make                                         1
+86    materials                                    1
+87    meaning                                      1
+88    mind                                         1
+89    moral                                        1
+90    more                                         2
+91    observed                                     2
+92    of                                          12
+93    offered                                      1
+94    on                                           5
+95    online                                       2
+96    opportunities                                1
+97    original                                     3
+98    other                                        2
+99    paper                                        2
+100   participants                                 2
+101   participated                                 1
+102   partnership                                  1
+103   pertaining                                   1
+104   picture                                      1
+105   point                                        1
+106   practice                                     1
+107   process                                      1
+108   provides                                     1
+109   published                                    1
+110   questionnaire                                1
+111   readers                                      1
+112   reading                                      7
+113   recommends                                   1
+114   reflecting                                   1
+115   reinforcing                                  1
+116   requires                                     1
+117   research                                     1
+118   researchers                                  1
+119   revealed                                     1
+120   rwanda                                       1
+121   rwanda-college                               1
+122   rwandan                                      1
+123   saide                                        1
+124   schools                                      1
+125   shortage                                     2
+126   since                                        1
+127   skills                                       2
+128   some                                         2
+129   south                                        1
+130   special                                      1
+131   specificity                                  1
+132   stories                                      4
+133   story                                        1
+134   storybook                                    3
+135   storybooks                                   3
+136   such                                         1
+137   support                                      1
+138   tale                                         1
+139   teacher                                      2
+140   teachers                                     2
+141   teaching                                     1
+142   ten                                          1
+143   than                                         2
+144   that                                         2
+145   the                                         18
+146   their                                        2
+147   them                                         1
+148   then                                         1
+149   there                                        2
+150   they                                         1
+151   thinking                                     1
+152   this                                         2
+153   to                                           8
+154   translated                                   5
+155   translating                                  1
+156   translation                                  2
+157   translators                                  1
+158   university                                   1
+159   versions                                     3
+160   website                                      3
+161   well                                         1
+162   were                                         3
+163   which                                        2
+164   who                                          1
+165   with                                         1
+166   workshop                                     2
+167   written                                      1
+167 distinct words, 328 words in total.
 
 Menu
  1. Enter or paste a new paragraph
@@ -379,141 +445,174 @@ Menu
 12. Exit
 Choose an option: 5
 #     Word                                     Count
-1     a                                            5
-2     about                                        2
-3     account                                      1
-4     ago                                          1
-5     all                                          1
-6     almost                                       1
-7     an                                           1
-8     and                                          7
-9     as                                           2
-10    ball                                         1
-11    before                                       1
-12    bringing                                     1
-13    but                                          1
-14    call                                         1
-15    can                                          1
-16    cato                                         1
-17    cherish                                      1
-18    circulation                                  1
-19    coffin                                       1
-20    damp                                         1
-21    degree                                       1
-22    deliberately                                 1
-23    driving                                      1
-24    drizzly                                      1
-25    especially                                   1
-26    every                                        1
-27    feelings                                     1
-28    find                                         2
-29    flourish                                     1
-30    for                                          1
-31    from                                         1
-32    funeral                                      1
-33    get                                          2
-34    grim                                         1
-35    growing                                      1
-36    hand                                         1
-37    hats                                         1
-38    have                                         1
-39    having                                       1
-40    high                                         1
-41    himself                                      1
-42    his                                          1
-43    how                                          1
-44    hypos                                        1
-45    i                                            9
-46    if                                           1
-47    in                                           4
-48    interest                                     1
-49    into                                         1
-50    involuntarily                                1
-51    is                                           4
-52    ishmael                                      1
-53    it                                           5
-54    knew                                         1
-55    knocking                                     1
-56    little                                       2
-57    long                                         1
-58    me                                           5
-59    meet                                         1
-60    men                                          1
-61    methodically                                 1
-62    mind                                         1
-63    money                                        1
-64    moral                                        1
-65    mouth                                        1
-66    my                                           4
-67    myself                                       2
-68    nearly                                       1
-69    never                                        1
-70    no                                           1
-71    nothing                                      2
-72    november                                     1
-73    ocean                                        1
-74    of                                           4
-75    off                                          2
-76    on                                           1
-77    or                                           2
-78    other                                        1
-79    part                                         1
-80    particular                                   1
-81    pausing                                      1
-82    people's                                     1
-83    philosophical                                1
-84    pistol                                       1
-85    precisely                                    1
-86    prevent                                      1
-87    principle                                    1
-88    purse                                        1
-89    quietly                                      1
-90    rear                                         1
-91    regulating                                   1
-92    requires                                     1
-93    sail                                         1
-94    same                                         1
-95    sea                                          1
-96    see                                          1
-97    ship                                         1
-98    shore                                        1
-99    some                                         2
-100   soon                                         1
-101   soul                                         1
-102   spleen                                       1
-103   stepping                                     1
-104   street                                       1
-105   strong                                       1
-106   substitute                                   1
-107   such                                         1
-108   surprising                                   1
-109   sword                                        1
-110   take                                         1
-111   that                                         1
-112   the                                         10
-113   their                                        1
-114   then                                         1
-115   there                                        1
-116   they                                         1
-117   this                                         2
-118   thought                                      1
-119   throws                                       1
-120   time                                         2
-121   to                                           5
-122   towards                                      1
-123   up                                           1
-124   upon                                         1
-125   upper                                        1
-126   very                                         1
-127   warehouses                                   1
-128   watery                                       1
-129   way                                          1
-130   whenever                                     4
-131   with                                         2
-132   world                                        1
-133   would                                        1
-134   years                                        1
-134 distinct words, 201 words in total.
+1     100                                          1
+2     32                                           1
+3     a                                            6
+4     ability                                      1
+5     activities                                   1
+6     adaptation                                   1
+7     adapting                                     1
+8     addressing                                   1
+9     africa                                       1
+10    african                                     11
+11    agglutinating                                1
+12    agglutinative                                1
+13    all                                          1
+14    although                                     1
+15    and                                         15
+16    are                                          2
+17    as                                           2
+18    available                                    1
+19    based                                        1
+20    bear                                         1
+21    between                                      3
+22    by                                           1
+23    can                                          1
+24    care                                         1
+25    challenge                                    2
+26    challenges                                   1
+27    children                                     3
+28    clashes                                      1
+29    collected                                    1
+30    contexts                                     1
+31    contributes                                  1
+32    created                                      1
+33    critical                                     1
+34    cultural                                     1
+35    data                                         1
+36    determining                                  1
+37    development                                  1
+38    differences                                  2
+39    digital                                      1
+40    distance                                     2
+41    during                                       2
+42    early                                        2
+43    education                                    3
+44    education's                                  1
+45    educators                                    2
+46    encountered                                  1
+47    english                                      3
+48    enjoyable                                    2
+49    experiences                                  1
+50    features                                     1
+51    filled                                       1
+52    finding                                      1
+53    findings                                     1
+54    firstly                                      1
+55    folktales                                    1
+56    for                                          3
+57    foreignization                               1
+58    found                                        1
+59    from                                         3
+60    grade                                        2
+61    graded                                       1
+62    have                                         1
+63    high                                         1
+64    implications                                 1
+65    in                                          15
+66    initiative                                   1
+67    institute                                    1
+68    interventions                                1
+69    interviewed                                  1
+70    into                                         1
+71    investigating                                1
+72    is                                           3
+73    it                                           1
+74    key                                          1
+75    kinyarwanda                                  5
+76    lack                                         1
+77    language                                     1
+78    languages                                    7
+79    length                                       1
+80    lesson                                       1
+81    level                                        1
+82    levels                                       2
+83    literacy                                     1
+84    maintain                                     1
+85    make                                         1
+86    materials                                    1
+87    meaning                                      1
+88    mind                                         1
+89    moral                                        1
+90    more                                         2
+91    observed                                     2
+92    of                                          12
+93    offered                                      1
+94    on                                           5
+95    online                                       2
+96    opportunities                                1
+97    original                                     3
+98    other                                        2
+99    paper                                        2
+100   participants                                 2
+101   participated                                 1
+102   partnership                                  1
+103   pertaining                                   1
+104   picture                                      1
+105   point                                        1
+106   practice                                     1
+107   process                                      1
+108   provides                                     1
+109   published                                    1
+110   questionnaire                                1
+111   readers                                      1
+112   reading                                      7
+113   recommends                                   1
+114   reflecting                                   1
+115   reinforcing                                  1
+116   requires                                     1
+117   research                                     1
+118   researchers                                  1
+119   revealed                                     1
+120   rwanda                                       1
+121   rwanda-college                               1
+122   rwandan                                      1
+123   saide                                        1
+124   schools                                      1
+125   shortage                                     2
+126   since                                        1
+127   skills                                       2
+128   some                                         2
+129   south                                        1
+130   special                                      1
+131   specificity                                  1
+132   stories                                      4
+133   story                                        1
+134   storybook                                    3
+135   storybooks                                   3
+136   such                                         1
+137   support                                      1
+138   tale                                         1
+139   teacher                                      2
+140   teachers                                     2
+141   teaching                                     1
+142   ten                                          1
+143   than                                         2
+144   that                                         2
+145   the                                         18
+146   their                                        2
+147   them                                         1
+148   then                                         1
+149   there                                        2
+150   they                                         1
+151   thinking                                     1
+152   this                                         2
+153   to                                           8
+154   translated                                   5
+155   translating                                  1
+156   translation                                  2
+157   translators                                  1
+158   university                                   1
+159   versions                                     3
+160   website                                      3
+161   well                                         1
+162   were                                         3
+163   which                                        2
+164   who                                          1
+165   with                                         1
+166   workshop                                     2
+167   written                                      1
+167 distinct words, 328 words in total.
 
 Menu
  1. Enter or paste a new paragraph
@@ -529,8 +628,8 @@ Menu
 11. Show the current paragraph and source
 12. Exit
 Choose an option: 7
-Word to search for: Whale
-"whale" does not appear in the text.
+Word to search for: Moby
+"moby" does not appear in the text.
 
 Menu
  1. Enter or paste a new paragraph
@@ -546,8 +645,8 @@ Menu
 11. Show the current paragraph and source
 12. Exit
 Choose an option: 7
-Word to search for: I
-"i" appears 9 time(s) (4.5% of all words).
+Word to search for: Kinyarwanda
+"kinyarwanda" appears 5 time(s) (1.5% of all words).
 
 Menu
  1. Enter or paste a new paragraph
@@ -582,17 +681,17 @@ Menu
 Choose an option: 8
 
 Text Summary
-Source: Moby-Dick; or, The Whale
-Details: Herman Melville, 1851. Chapter 1, "Loomings", opening paragraph (public domain)
-Characters: 1110
-Total words: 201
-Distinct words: 134
-Average word length: 4.40 letters
-Longest word: "involuntarily" (13 characters)
-Most frequent word: "the" (10 times)
+Source: From an African Oral Tale to an English Picture Book: Rwandan Teachers' Experience with Online Translation of South African Institute of Distance Education's African Storybooks
+Details: Epimaque Niyibizi, Emmanuel Sibomana, Aloysie Uwizeyemariya, Sylvestre Ntabajyana and Cyprien Niyomugabo (University of Rwanda - College of Education). Teacher Education through Flexible Learning in Africa, Vol 1 No 1, 2019. Abstract. DOI 10.35293/tetfle.v1i1.66. Licence: CC BY 4.0
+Characters: 2333
+Total words: 328
+Distinct words: 167
+Average word length: 6.04 letters
+Longest word: "rwanda-college" (14 characters)
+Most frequent word: "the" (18 times)
 Words truncated to 39 characters: 0
-Custom analysis - Lexical Diversity Score: 66.7 / 100, High (varied)
-  Content-word diversity: 90.5, words used once: 109 (81.3% of distinct)
+Custom analysis - Lexical Diversity Score: 50.9 / 100, Moderate
+  Content-word diversity: 65.5, words used once: 111 (66.5% of distinct)
 
 Menu
  1. Enter or paste a new paragraph
@@ -611,11 +710,11 @@ Choose an option: 9
 
 Custom analysis: Lexical Diversity Score:
 Score = 100 x distinct words / total words
-Distinct / total: 134 / 201
-Lexical Diversity Score: 66.7 / 100 -> High (varied)
-Words used exactly once (hapax): 109 = 81.3% of distinct words
-Content words (stop words such as "the", "and" removed): 105 distinct / 116 total
-Content-word diversity: 90.5 / 100
+Distinct / total: 167 / 328
+Lexical Diversity Score: 50.9 / 100 -> Moderate
+Words used exactly once (hapax): 111 = 66.5% of distinct words
+Content words (stop words such as "the", "and" removed): 144 distinct / 220 total
+Content-word diversity: 65.5 / 100
 Bands: below 40 Low (repetitive), 40 to 59.9 Moderate, 60+ High (varied).
 Reading: the repetition comes mostly from small function words; the meaningful vocabulary is more varied than the raw score suggests.
 
@@ -635,14 +734,14 @@ Menu
 Choose an option: 10
 
 Memory Inspection
-Text buffer address:       0x5e26a30415c0
-  heap block holding the paragraph: 1110 chars used of 2048 bytes reserved
-Word statistics array:     0x5e26a3041dd0
-  heap block of struct wordStat: 134 used of 256 reserved, 44 bytes each
-Selected word-stat entry:  0x5e26a30430e4
-  entry [111] "the" (the most frequent word) = array + 111 x 44 bytes
-  its name field: 0x5e26a30430e4, its count field: 0x5e26a304310c
-Context structure (stack): 0x7ffdcf9c6370
+Text buffer address:       0x5b6d2dd1b5c0
+  heap block holding the paragraph: 2333 chars used of 4096 bytes reserved
+Word statistics array:     0x5b6d2dd1c5d0
+  heap block of struct wordStat: 167 used of 256 reserved, 44 bytes each
+Selected word-stat entry:  0x5b6d2dd1de90
+  entry [144] "the" (the most frequent word) = array + 144 x 44 bytes
+  its name field: 0x5b6d2dd1de90, its count field: 0x5b6d2dd1deb8
+Context structure (stack): 0x7fff5285a1e0
 Addresses change from run to run; heap blocks may move after realloc.
 
 Menu
@@ -727,14 +826,14 @@ Menu
 Choose an option: 10
 
 Memory Inspection
-Text buffer address:       0x5e26a3046a00
+Text buffer address:       0x5b6d2dd21200
   heap block holding the paragraph: 741 chars used of 1024 bytes reserved
-Word statistics array:     0x5e26a3046e10
+Word statistics array:     0x5b6d2dd21610
   heap block of struct wordStat: 15 used of 16 reserved, 44 bytes each
-Selected word-stat entry:  0x5e26a3047078
+Selected word-stat entry:  0x5b6d2dd21878
   entry [14] "again" (the most frequent word) = array + 14 x 44 bytes
-  its name field: 0x5e26a3047078, its count field: 0x5e26a30470a0
-Context structure (stack): 0x7ffdcf9c6370
+  its name field: 0x5b6d2dd21878, its count field: 0x5b6d2dd218a0
+Context structure (stack): 0x7fff5285a1e0
 Addresses change from run to run; heap blocks may move after realloc.
 
 Menu
