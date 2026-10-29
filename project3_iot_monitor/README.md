@@ -37,7 +37,9 @@ make test        # unit + integration + performance
 | 7 | Monitoring summary | `monitoring_summary()` |
 | 8 | Exit | frees memory and quits |
 
-Six devices are registered at start, two of each type. One round of simulation
+The setting is a small farm. Six devices are registered at start, two of each type:
+greenhouse and poultry house temperature, irrigation main and drip line pressure, and
+solar pump and weather station batteries. One round of simulation
 gives every device a reading, so 2 rounds = 12 readings.
 
 ## Where each requirement lives

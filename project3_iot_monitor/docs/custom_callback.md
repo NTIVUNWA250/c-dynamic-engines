@@ -3,9 +3,9 @@
 ## Purpose
 
 The type callbacks only ask "is this reading inside the safe range?". A reading can
-pass that check and still be suspicious. For example, a cold store that jumps from
+pass that check and still be suspicious. For example, a greenhouse that jumps from
 20 C to 41 C between two readings is still "in range", but something is wrong: a
-door left open, a failing compressor, or a faulty sensor. The drift detector
+vent stuck shut, a heater left on, or a faulty sensor. The drift detector
 catches these sudden changes, whether or not the new value is in range.
 
 ## Operating conditions
