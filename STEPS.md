@@ -84,9 +84,8 @@ git commit -m "Add project 1 sample output"
 
 ## 5. (Optional) Use your own data
 
-- **Project 1**: change the 12 starting students in `src/dataset.c`. Keep between
-  10 and 15. If you change grades, `tests/integration.sh` checks a few exact
-  names, so run `make test` and update the expected lines.
+- **Project 1** (done): the dataset is the class list. The first 15 students
+  start in `src/dataset.c`, and the scripted session adds the other 8.
 - **Project 2**: the built-in paragraph is *Moby-Dick* (public domain). To use
   another one (150+ words), either paste it with menu option 1 at run time, or
   replace `SAMPLE_TITLE`, `SAMPLE_DETAILS` and `SAMPLE_PARAGRAPH` in
