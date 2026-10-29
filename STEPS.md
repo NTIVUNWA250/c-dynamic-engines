@@ -30,7 +30,7 @@ Each project prints `Student ID: NTIVUNWA250` (your GitHub username, since no
 student number was available). To change it, edit `STUDENT_ID` in
 `include/config.h` on each project's branch and commit.
 
-## 3. Run the tests
+## 3. Run the tests (done, all passing)
 
 On each branch:
 
@@ -42,7 +42,7 @@ Each project prints `N checks, 0 failed`, `integration: all checks passed`, and
 its performance timings. Tests use AddressSanitizer, so a memory leak or overflow
 fails the run.
 
-## 4. Build, run and make the sample outputs
+## 4. Build, run and make the sample outputs (done, committed on each branch)
 
 Project 1, on its branch:
 
