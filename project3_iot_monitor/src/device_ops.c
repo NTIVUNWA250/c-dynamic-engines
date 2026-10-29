@@ -37,13 +37,13 @@ void display_devices(Engine *engine)
         printf("No devices registered.\n");
         return;
     }
-    printf("%-6s %-22s %-12s %-12s %-8s %s\n", "ID", "Name", "Type", "Last value", "Status",
+    printf("%-6s %-24s %-12s %-12s %-8s %s\n", "ID", "Name", "Type", "Last value", "Status",
            "Readings");
     for (const Device *d = list->items, *end = d + list->count; d < end; d++) {
         char value[32] = "-";
         if (d->reading_count > 0)
             format_reading(d, value, sizeof value);
-        printf("%-6d %-22.22s %-12s %-12s %-8s %zu\n", d->id, d->name,
+        printf("%-6d %-24.24s %-12s %-12s %-8s %zu\n", d->id, d->name,
                device_limits(d->type)->type_name, value, device_status_name(d->status),
                d->reading_count);
     }

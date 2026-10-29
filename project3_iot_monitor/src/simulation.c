@@ -108,11 +108,11 @@ static void print_result(size_t number, const Device *d, const Monitor *m)
 {
     char value[32];
     format_reading(d, value, sizeof value);
-    printf("%-4zu %-6d %-20.20s %-12s %-10s %-20s %s\n", number, d->id, d->name,
+    printf("%-4zu %-6d %-24.24s %-12s %-10s %-20s %s\n", number, d->id, d->name,
            device_limits(d->type)->type_name, value, callback_name_for_type(d->type),
            m->last_note);
     if (m->drift_note[0] != '\0')
-        printf("%-56s drift_detector       %s\n", "", m->drift_note);
+        printf("%-60s drift_detector       %s\n", "", m->drift_note);
 }
 
 ProcessResult process_queue(DeviceList *devices, ReadingQueue *queue, Monitor *monitor)
@@ -120,7 +120,7 @@ ProcessResult process_queue(DeviceList *devices, ReadingQueue *queue, Monitor *m
     ProcessResult result = {0, 0};
     monitor_bind(monitor);
     if (queue->count > 0)
-        printf("%-4s %-6s %-20s %-12s %-10s %-20s %s\n", "#", "ID", "Device", "Type", "Value",
+        printf("%-4s %-6s %-24s %-12s %-10s %-20s %s\n", "#", "ID", "Device", "Type", "Value",
                "Callback", "Result");
 
     for (const PendingReading *r = queue->items, *end = r + queue->count; r < end; r++) {
