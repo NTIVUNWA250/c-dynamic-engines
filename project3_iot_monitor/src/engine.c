@@ -6,12 +6,12 @@ static const struct {
     const char *name;
     DeviceType type;
 } STARTING_DEVICES[] = {
-    {101, "Server room temp", DEVICE_TEMPERATURE},
-    {102, "Cold store temp", DEVICE_TEMPERATURE},
-    {201, "Water main pressure", DEVICE_PRESSURE},
-    {202, "Boiler pressure", DEVICE_PRESSURE},
-    {301, "Gateway battery", DEVICE_BATTERY},
-    {302, "Field node battery", DEVICE_BATTERY},
+    {101, "Greenhouse air temp", DEVICE_TEMPERATURE},
+    {102, "Poultry house temp", DEVICE_TEMPERATURE},
+    {201, "Irrigation main line", DEVICE_PRESSURE},
+    {202, "Drip line pressure", DEVICE_PRESSURE},
+    {301, "Solar pump battery", DEVICE_BATTERY},
+    {302, "Weather station battery", DEVICE_BATTERY},
 };
 
 #define STARTING_COUNT (sizeof STARTING_DEVICES / sizeof STARTING_DEVICES[0])
