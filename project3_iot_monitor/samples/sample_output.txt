@@ -4,7 +4,7 @@ Custom Callback: Sensor Drift Detector
 Random seed: 42 (fixed)
 Registered 6 starting devices.
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -15,7 +15,7 @@ Registered 6 starting devices.
 8. Exit
 Choose an option: 2
 
--- Registered devices --
+Registered devices:
 ID     Name                   Type         Last value   Status   Readings
 101    Server room temp       Temperature  -            IDLE     0
 102    Cold store temp        Temperature  -            IDLE     0
@@ -25,7 +25,7 @@ ID     Name                   Type         Last value   Status   Readings
 302    Field node battery     Battery      -            IDLE     0
 Devices: 6 (memory reserved for 6)
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -39,7 +39,7 @@ Each round gives every device one new reading (6 per round).
 Rounds (1-50): 2
 Generated 12 readings. 12 waiting to be processed.
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -50,7 +50,7 @@ Generated 12 readings. 12 waiting to be processed.
 8. Exit
 Choose an option: 5
 
--- Processing readings through callbacks --
+Processing readings through callbacks:
 #    ID     Device               Type         Value      Callback             Result
 1    101    Server room temp     Temperature  16.0 C     temperature_monitor  NORMAL (range 15-45 C)
 2    102    Cold store temp      Temperature  24.9 C     temperature_monitor  NORMAL (range 15-45 C)
@@ -66,7 +66,7 @@ Choose an option: 5
 12   302    Field node battery   Battery      3.58 V     battery_monitor      NORMAL (range 3.3-4.2 V)
 Processed 12 readings.
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -77,7 +77,7 @@ Processed 12 readings.
 8. Exit
 Choose an option: 1
 
--- Register a device --
+Register a device:
 Device ID (1-99999): 401
 Device name: Lab freezer temp
 1. Temperature sensor
@@ -86,7 +86,7 @@ Device name: Lab freezer temp
 Type: 1
 Device 401 registered. Total devices: 7
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -97,11 +97,11 @@ Device 401 registered. Total devices: 7
 8. Exit
 Choose an option: 1
 
--- Register a device --
+Register a device:
 Device ID (1-99999): 401
 Rejected: a device with ID 401 already exists.
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -112,7 +112,7 @@ Rejected: a device with ID 401 already exists.
 8. Exit
 Choose an option: 1
 
--- Register a device --
+Register a device:
 Device ID (1-99999): 0
 Invalid input. Enter a whole number from 1 to 99999.
 Device ID (1-99999): 402
@@ -123,7 +123,7 @@ Device name: Spare battery
 Type: 3
 Device 402 registered. Total devices: 8
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -137,7 +137,7 @@ Each round gives every device one new reading (8 per round).
 Rounds (1-50): 1
 Generated 8 readings. 8 waiting to be processed.
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -148,11 +148,11 @@ Generated 8 readings. 8 waiting to be processed.
 8. Exit
 Choose an option: 3
 
--- Remove a device --
+Remove a device:
 Device ID to remove: 202
 Device 202 removed. Total devices: 7
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -163,11 +163,11 @@ Device 202 removed. Total devices: 7
 8. Exit
 Choose an option: 3
 
--- Remove a device --
+Remove a device:
 Device ID to remove: 999
 No device with ID 999, nothing removed.
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -178,7 +178,7 @@ No device with ID 999, nothing removed.
 8. Exit
 Choose an option: 5
 
--- Processing readings through callbacks --
+Processing readings through callbacks:
 #    ID     Device               Type         Value      Callback             Result
 1    101    Server room temp     Temperature  26.5 C     temperature_monitor  NORMAL (range 15-45 C)
 2    102    Cold store temp      Temperature  18.1 C     temperature_monitor  NORMAL (range 15-45 C)
@@ -192,7 +192,7 @@ Choose an option: 5
 7    402    Spare battery        Battery      4.17 V     battery_monitor      NORMAL (range 3.3-4.2 V)
 Processed 7 readings, skipped 1 for removed devices.
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -206,7 +206,7 @@ Each round gives every device one new reading (7 per round).
 Rounds (1-50): 1
 Generated 7 readings. 7 waiting to be processed.
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -217,7 +217,7 @@ Generated 7 readings. 7 waiting to be processed.
 8. Exit
 Choose an option: 5
 
--- Processing readings through callbacks --
+Processing readings through callbacks:
 #    ID     Device               Type         Value      Callback             Result
 1    101    Server room temp     Temperature  13.0 C     temperature_monitor  ALERT: too cold: below the safe operating range
                                                          drift_detector       DRIFT: sudden drop of 13.56 C since the last reading (limit 10.00)
@@ -229,7 +229,7 @@ Choose an option: 5
 7    402    Spare battery        Battery      4.28 V     battery_monitor      ALERT: over-voltage: charging fault, battery may be damaged
 Processed 7 readings.
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -240,7 +240,7 @@ Processed 7 readings.
 8. Exit
 Choose an option: 2
 
--- Registered devices --
+Registered devices:
 ID     Name                   Type         Last value   Status   Readings
 101    Server room temp       Temperature  13.0 C       ALERT    4
 102    Cold store temp        Temperature  25.7 C       NORMAL   4
@@ -251,7 +251,7 @@ ID     Name                   Type         Last value   Status   Readings
 402    Spare battery          Battery      4.28 V       ALERT    2
 Devices: 7 (memory reserved for 12)
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -262,7 +262,7 @@ Devices: 7 (memory reserved for 12)
 8. Exit
 Choose an option: 6
 
--- Alerts (10) --
+Alerts (10):
 [1] Device 201 "Water main pressure" (Pressure)
      Reading: 1147.00 hPa | Expected: 950.00 to 1050.00 hPa
      Reason: over-pressure: risk of pipe or seal damage
@@ -304,7 +304,7 @@ Choose an option: 6
      Reason: over-voltage: charging fault, battery may be damaged
      Callback: battery_monitor
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
@@ -315,7 +315,7 @@ Choose an option: 6
 8. Exit
 Choose an option: 7
 
-===== Monitoring Summary =====
+Monitoring Summary
 Registered devices: 7
 Readings processed: 26
 Normal readings: 19
@@ -335,9 +335,8 @@ Custom callback - Sensor Drift Detector:
   Battery      1 (limit 0.35 V per reading)
   Largest jump: device 301 changed by -0.73 (208% of its limit)
 Total alerts logged: 10
-==============================
 
-========== Menu ==========
+Menu
 1. Register a new device
 2. Display all devices
 3. Remove a device
