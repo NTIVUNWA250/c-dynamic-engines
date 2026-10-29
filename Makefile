@@ -1,5 +1,5 @@
 # Runs the shared helper tests, then every project's tests.
-PROJECTS := $(wildcard project*/)
+PROJECTS := $(dir $(wildcard project*/Makefile))
 
 test:
 	$(MAKE) -C common test
