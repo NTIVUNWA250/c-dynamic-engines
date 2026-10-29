@@ -30,7 +30,7 @@ void process_readings(Engine *engine)
         printf("No readings waiting. Generate some first.\n");
         return;
     }
-    printf("\n-- Processing readings through callbacks --\n");
+    printf("\nProcessing readings through callbacks:\n");
     ProcessResult r = process_queue(&engine->devices, &engine->queue, &engine->monitor);
     engine->skipped_readings += r.skipped;
     printf("Processed %zu readings", r.processed);
@@ -42,7 +42,7 @@ void process_readings(Engine *engine)
 void display_alerts(Engine *engine)
 {
     const Monitor *m = &engine->monitor;
-    printf("\n-- Alerts (%zu) --\n", m->alert_count);
+    printf("\nAlerts (%zu):\n", m->alert_count);
     if (m->alert_count == 0) {
         printf("No alerts so far.\n");
         return;
@@ -61,7 +61,7 @@ void display_alerts(Engine *engine)
 void monitoring_summary(Engine *engine)
 {
     const Monitor *m = &engine->monitor;
-    printf("\n===== Monitoring Summary =====\n");
+    printf("\nMonitoring Summary\n");
     printf("Registered devices: %zu\n", engine->devices.count);
     printf("Readings processed: %zu\n", m->readings_processed);
     printf("Normal readings: %zu\n", m->normal_readings);
@@ -84,5 +84,4 @@ void monitoring_summary(Engine *engine)
         printf("  Largest jump: device %d changed by %+.2f (%.0f%% of its limit)\n",
                m->largest_drift_device, m->largest_drift_change, m->largest_drift_ratio * 100.0);
     printf("Total alerts logged: %zu\n", m->alert_count);
-    printf("==============================\n");
 }

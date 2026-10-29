@@ -8,7 +8,7 @@ void register_device(Engine *engine)
     int id;
     int type_choice;
     char name[DEVICE_NAME_LEN];
-    printf("\n-- Register a device --\n");
+    printf("\nRegister a device:\n");
     if (!read_int("Device ID (1-99999): ", DEVICE_ID_MIN, DEVICE_ID_MAX, &id))
         return;
     if (devices_find(&engine->devices, id) != NULL) {
@@ -32,7 +32,7 @@ void register_device(Engine *engine)
 void display_devices(Engine *engine)
 {
     const DeviceList *list = &engine->devices;
-    printf("\n-- Registered devices --\n");
+    printf("\nRegistered devices:\n");
     if (list->count == 0) {
         printf("No devices registered.\n");
         return;
@@ -53,7 +53,7 @@ void display_devices(Engine *engine)
 void remove_device(Engine *engine)
 {
     int id;
-    printf("\n-- Remove a device --\n");
+    printf("\nRemove a device:\n");
     if (!read_int("Device ID to remove: ", DEVICE_ID_MIN, DEVICE_ID_MAX, &id))
         return;
     if (devices_remove(&engine->devices, id))

@@ -23,7 +23,7 @@ static const struct {
 void run_menu(Engine *engine)
 {
     for (;;) {
-        printf("\n========== Menu ==========\n");
+        printf("\nMenu\n");
         for (int i = 0; i < MENU_SIZE; i++)
             printf("%d. %s\n", i + 1, MENU[i].label);
 
