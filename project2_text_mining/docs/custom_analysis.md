@@ -45,16 +45,17 @@ This is one pass over the distinct words, plus a short stop-word lookup for each
 - The score drops naturally as texts get longer, because common words keep
   coming back. Only compare texts of similar length.
 
-## Result for the built-in paragraph (Moby-Dick, 201 words)
+## Result for the built-in paragraph (University of Rwanda abstract, 328 words)
 
 | Measure | Value |
 |---|---|
-| Distinct / total | 134 / 201 |
-| Lexical Diversity Score | 66.7, High (varied) |
-| Words used once | 109 (81.3% of distinct) |
-| Content words | 105 distinct / 116 total |
-| Content-word diversity | 90.5 |
+| Distinct / total | 167 / 328 |
+| Lexical Diversity Score | 50.9, Moderate |
+| Words used once | 111 (66.5% of distinct) |
+| Content words | 144 distinct / 220 total |
+| Content-word diversity | 65.5 |
 
-Melville's repetition is almost all function words (*the*, *I*, *and*, *of*,
-*whenever*). Almost every meaningful word appears only once, which matches the
-paragraph's long, image-packed sentences.
+An academic abstract repeats its key terms on purpose: *african* appears 11
+times, *reading* 7 and *kinyarwanda* 5. That keeps the raw score Moderate. Once
+function words are removed, the content-word score rises to 65.5, so the
+vocabulary around those key terms is still varied.

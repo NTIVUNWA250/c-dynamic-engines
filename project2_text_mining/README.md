@@ -11,9 +11,18 @@ make                         # builds bin/text_analyzer
 ./bin/text_analyzer
 ```
 
-The program starts with a built-in paragraph: Herman Melville, *Moby-Dick* (1851),
-Chapter 1, opening paragraph. It is public domain and 201 words long. Use menu
-option 1 to paste your own.
+The program starts with a built-in paragraph: the abstract (328 words) of a paper
+by five University of Rwanda authors.
+
+- **Source:** Niyibizi, Sibomana, Uwizeyemariya, Ntabajyana and Niyomugabo,
+  "From an African Oral Tale to an English Picture Book: Rwandan Teachers'
+  Experience with Online Translation of South African Institute of Distance
+  Education's African Storybooks".
+- **Published in:** *Teacher Education through Flexible Learning in Africa*,
+  Vol 1 No 1, 2019, DOI 10.35293/tetfle.v1i1.66.
+- **Licence:** CC BY 4.0, so it may be reused with credit.
+
+Use menu option 1 to paste your own paragraph.
 
 Make a sample output from the scripted session:
 
@@ -69,7 +78,7 @@ Punctuation, apostrophes, hyphens, case and long words: see `docs/text_rules.md`
 ## Evidence in the sample session
 
 `samples/demo_input.txt` covers:
-- every operation on the Moby-Dick paragraph;
+- every operation on the built-in abstract;
 - a pasted paragraph with `well-known`, `cat's`, `--` dashes, `!!!`, mixed case
   (`the`, `CAT`), a 45-letter word and a 599-character line, which shows the
   buffer growing;
