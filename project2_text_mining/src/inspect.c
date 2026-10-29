@@ -6,7 +6,7 @@
 void custom_analysis(TextAnalysis *ctx)
 {
     const WordTable *t = &ctx->table;
-    printf("\n-- Custom analysis: Lexical Diversity Score --\n");
+    printf("\nCustom analysis: Lexical Diversity Score:\n");
     printf("Score = 100 x distinct words / total words\n");
     if (t->total_words == 0) {
         printf("No words to analyse.\n");
@@ -34,7 +34,7 @@ void custom_analysis(TextAnalysis *ctx)
 void memory_inspection(TextAnalysis *ctx)
 {
     const WordTable *t = &ctx->table;
-    printf("\nMemory Inspection\n--------------------------\n");
+    printf("\nMemory Inspection\n");
     printf("Text buffer address:       %p\n", (void *)ctx->text.data);
     printf("  heap block holding the paragraph: %zu chars used of %zu bytes reserved\n",
            ctx->text.length, ctx->text.capacity);

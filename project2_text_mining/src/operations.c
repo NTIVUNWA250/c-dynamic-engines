@@ -92,7 +92,7 @@ void search_word(TextAnalysis *ctx)
 void generate_text_summary(TextAnalysis *ctx)
 {
     const WordTable *t = &ctx->table;
-    printf("\n===== Text Summary =====\n");
+    printf("\nText Summary\n");
     printf("Source: %s\n", ctx->source_title);
     printf("Details: %s\n", ctx->source_details);
     printf("Characters: %zu\n", ctx->text.length);
@@ -112,5 +112,4 @@ void generate_text_summary(TextAnalysis *ctx)
     printf("Custom analysis - Lexical Diversity Score: %.1f / 100, %s\n", d.score, d.band);
     printf("  Content-word diversity: %.1f, words used once: %zu (%.1f%% of distinct)\n",
            d.content_score, d.hapax, d.hapax_share);
-    printf("========================\n");
 }
