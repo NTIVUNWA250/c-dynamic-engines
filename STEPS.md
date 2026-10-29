@@ -24,19 +24,11 @@ git switch feat/academic-risk-engine         # open one
 git log --oneline main..HEAD                 # its commits
 ```
 
-## 2. Put your student ID in the headers
+## 2. Student ID in the headers (done)
 
-Each project has `include/config.h` with `#define STUDENT_ID "00000"`. On each
-branch, change `00000` to your ID and commit:
-
-```
-git switch feat/academic-risk-engine
-nano project1_academic_risk/include/config.h
-git commit -am "Set student ID in project 1 header"
-```
-
-Repeat for `feat/text-mining-analyzer` (`project2_text_mining/include/config.h`)
-and `feat/iot-callback-engine` (`project3_iot_monitor/include/config.h`).
+Each project prints `Student ID: NTIVUNWA250` (your GitHub username, since no
+student number was available). To change it, edit `STUDENT_ID` in
+`include/config.h` on each project's branch and commit.
 
 ## 3. Run the tests
 
