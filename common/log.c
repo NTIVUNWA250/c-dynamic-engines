@@ -10,7 +10,6 @@ static const char *LEVEL_NAMES[] = {"DEBUG", "INFO", "WARN", "ERROR"};
 static LogLevel current_level = LOG_WARN;
 static int level_loaded = 0;
 
-// Reads APP_LOG (debug, info, warn, error) once, the first time anything is logged.
 static void load_level(void)
 {
     const char *env = getenv("APP_LOG");
