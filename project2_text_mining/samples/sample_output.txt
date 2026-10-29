@@ -5,7 +5,7 @@ Details: Herman Melville, 1851. Chapter 1, "Loomings", opening paragraph (public
 Custom Analysis: Lexical Diversity Score
 Loaded the built-in paragraph: 201 words, 134 distinct.
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -22,7 +22,7 @@ Choose an option: 2
 Total words: 201
 Distinct words: 134
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -38,7 +38,7 @@ Distinct words: 134
 Choose an option: 3
 Longest word: "involuntarily" (13 characters)
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -54,7 +54,7 @@ Longest word: "involuntarily" (13 characters)
 Choose an option: 4
 Most frequent word: "the", 10 times (5.0% of all words)
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -209,7 +209,7 @@ Word statistics sorted By frequency (most frequent first).
 134   years                                        1
 134 distinct words, 201 words in total.
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -364,7 +364,7 @@ Word statistics sorted Alphabetically (a to z).
 134   years                                        1
 134 distinct words, 201 words in total.
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -515,7 +515,7 @@ Choose an option: 5
 134   years                                        1
 134 distinct words, 201 words in total.
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -532,7 +532,7 @@ Choose an option: 7
 Word to search for: Whale
 "whale" does not appear in the text.
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -549,7 +549,7 @@ Choose an option: 7
 Word to search for: I
 "i" appears 9 time(s) (4.5% of all words).
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -566,7 +566,7 @@ Choose an option: 7
 Word to search for: !!!
 "!!!" contains no letters or digits.
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -581,7 +581,7 @@ Word to search for: !!!
 12. Exit
 Choose an option: 8
 
-===== Text Summary =====
+Text Summary
 Source: Moby-Dick; or, The Whale
 Details: Herman Melville, 1851. Chapter 1, "Loomings", opening paragraph (public domain)
 Characters: 1110
@@ -593,9 +593,8 @@ Most frequent word: "the" (10 times)
 Words truncated to 39 characters: 0
 Custom analysis - Lexical Diversity Score: 66.7 / 100, High (varied)
   Content-word diversity: 90.5, words used once: 109 (81.3% of distinct)
-========================
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -610,7 +609,7 @@ Custom analysis - Lexical Diversity Score: 66.7 / 100, High (varied)
 12. Exit
 Choose an option: 9
 
--- Custom analysis: Lexical Diversity Score --
+Custom analysis: Lexical Diversity Score:
 Score = 100 x distinct words / total words
 Distinct / total: 134 / 201
 Lexical Diversity Score: 66.7 / 100 -> High (varied)
@@ -620,7 +619,7 @@ Content-word diversity: 90.5 / 100
 Bands: below 40 Low (repetitive), 40 to 59.9 Moderate, 60+ High (varied).
 Reading: the repetition comes mostly from small function words; the meaningful vocabulary is more varied than the raw score suggests.
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -636,18 +635,17 @@ Reading: the repetition comes mostly from small function words; the meaningful v
 Choose an option: 10
 
 Memory Inspection
---------------------------
-Text buffer address:       0x597abecfc5c0
+Text buffer address:       0x5e26a30415c0
   heap block holding the paragraph: 1110 chars used of 2048 bytes reserved
-Word statistics array:     0x597abecfcdd0
+Word statistics array:     0x5e26a3041dd0
   heap block of struct wordStat: 134 used of 256 reserved, 44 bytes each
-Selected word-stat entry:  0x597abecfe0e4
+Selected word-stat entry:  0x5e26a30430e4
   entry [111] "the" (the most frequent word) = array + 111 x 44 bytes
-  its name field: 0x597abecfe0e4, its count field: 0x597abecfe10c
-Context structure (stack): 0x7ffe99319880
+  its name field: 0x5e26a30430e4, its count field: 0x5e26a304310c
+Context structure (stack): 0x7ffdcf9c6370
 Addresses change from run to run; heap blocks may move after realloc.
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -668,7 +666,7 @@ Paste or type the paragraph. Press Enter on an empty line to finish.
 Loaded "Punctuation Test": 119 words, 15 distinct.
 Note: this text has fewer than 150 words.
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -685,7 +683,7 @@ Choose an option: 2
 Total words: 119
 Distinct words: 15
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -700,7 +698,7 @@ Distinct words: 15
 12. Exit
 Choose an option: 8
 
-===== Text Summary =====
+Text Summary
 Source: Punctuation Test
 Details: Written for this project to test the word rules
 Characters: 741
@@ -712,9 +710,8 @@ Most frequent word: "again" (100 times)
 Words truncated to 39 characters: 1
 Custom analysis - Lexical Diversity Score: 12.6 / 100, Low (repetitive)
   Content-word diversity: 9.8, words used once: 11 (73.3% of distinct)
-========================
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -730,18 +727,17 @@ Custom analysis - Lexical Diversity Score: 12.6 / 100, Low (repetitive)
 Choose an option: 10
 
 Memory Inspection
---------------------------
-Text buffer address:       0x597abed01a00
+Text buffer address:       0x5e26a3046a00
   heap block holding the paragraph: 741 chars used of 1024 bytes reserved
-Word statistics array:     0x597abed01e10
+Word statistics array:     0x5e26a3046e10
   heap block of struct wordStat: 15 used of 16 reserved, 44 bytes each
-Selected word-stat entry:  0x597abed02078
+Selected word-stat entry:  0x5e26a3047078
   entry [14] "again" (the most frequent word) = array + 14 x 44 bytes
-  its name field: 0x597abed02078, its count field: 0x597abed020a0
-Context structure (stack): 0x7ffe99319880
+  its name field: 0x5e26a3047078, its count field: 0x5e26a30470a0
+Context structure (stack): 0x7ffdcf9c6370
 Addresses change from run to run; heap blocks may move after realloc.
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -773,7 +769,7 @@ Choose an option: 5
 15    again                                      100
 15 distinct words, 119 words in total.
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -793,7 +789,7 @@ Paste or type the paragraph. Press Enter on an empty line to finish.
 (read 0 characters)
 Empty text, keeping the previous paragraph.
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
@@ -816,7 +812,7 @@ Pneumonoultramicroscopicsilicovolcanoconiosis is long.
 again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again
 
 
-========== Menu ==========
+Menu
  1. Enter or paste a new paragraph
  2. Count words
  3. Longest word
