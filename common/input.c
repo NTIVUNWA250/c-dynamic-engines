@@ -11,7 +11,6 @@
 #include <string.h>
 #include <unistd.h>
 
-// Echoes piped input, so a saved sample output shows what was typed.
 static void echo_if_piped(const char *line)
 {
     if (!isatty(STDIN_FILENO))
@@ -32,7 +31,6 @@ int read_line(const char *prompt, char *buf, size_t size)
     if (newline != NULL) {
         *newline = '\0';
     } else {
-        // No newline means the line did not fit: throw away the rest of it.
         int c = getchar();
         if (c != '\n' && c != EOF) {
             truncated = 1;
@@ -128,7 +126,6 @@ char *trim(char *text)
     while (end > start && isspace((unsigned char)end[-1]))
         end--;
     *end = '\0';
-    // Shift the trimmed text to the front of the buffer.
     if (start != text)
         memmove(text, start, (size_t)(end - start) + 1);
     return text;

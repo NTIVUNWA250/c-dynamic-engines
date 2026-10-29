@@ -3,7 +3,6 @@
 
 #include <string.h>
 
-// Checks number parsing and trimming used by every project's menus.
 int main(void)
 {
     int i = 0;

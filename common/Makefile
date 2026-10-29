@@ -2,7 +2,6 @@ CC       ?= gcc
 CFLAGS   := -std=c11 -Wall -Wextra -Wpedantic -I.
 TESTFLAGS := -g -fsanitize=address,undefined -fno-omit-frame-pointer
 
-# Builds and runs the shared helper tests with sanitizers on.
 test: bin/test_input
 	./bin/test_input
 
