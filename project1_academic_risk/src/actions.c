@@ -12,7 +12,7 @@
 void add_student(StudentList *list)
 {
     Student s = {0};
-    printf("\n-- Add a student --\n");
+    printf("\nAdd a student:\n");
     if (!read_int("Student ID (1-999999): ", ID_MIN, ID_MAX, &s.id))
         return;
     if (list_find_id(list, s.id) != NULL) {
@@ -33,7 +33,7 @@ void add_student(StudentList *list)
 
 void display_students(StudentList *list)
 {
-    printf("\n-- All students --\n");
+    printf("\nAll students:\n");
     print_student_table(list);
 }
 
@@ -50,7 +50,7 @@ void sort_students(StudentList *list)
 {
     int count = (int)(sizeof SORT_OPTIONS / sizeof SORT_OPTIONS[0]);
     int choice;
-    printf("\n-- Sort students --\n");
+    printf("\nSort students:\n");
     for (int i = 0; i < count; i++)
         printf("%d. %s\n", i + 1, SORT_OPTIONS[i].label);
     if (!read_int("Sort by: ", 1, count, &choice))
@@ -103,7 +103,7 @@ static void search_by_name(const StudentList *list)
 void search_student(StudentList *list)
 {
     int mode;
-    printf("\n-- Search --\n1. By student ID\n2. By name\n");
+    printf("\nSearch:\n1. By student ID\n2. By name\n");
     if (!read_int("Search by: ", 1, 2, &mode))
         return;
     if (mode == 2) {
@@ -125,7 +125,7 @@ void search_student(StudentList *list)
 void remove_student(StudentList *list)
 {
     int id;
-    printf("\n-- Remove a student --\n");
+    printf("\nRemove a student:\n");
     if (!read_int("Student ID to remove: ", ID_MIN, ID_MAX, &id))
         return;
     if (list_remove(list, id))

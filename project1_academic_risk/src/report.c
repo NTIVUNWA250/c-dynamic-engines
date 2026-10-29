@@ -41,7 +41,7 @@ void print_risk_report(const StudentList *list)
 
 void print_summary_report(const StudentList *list)
 {
-    printf("\n===== Summary Report =====\n");
+    printf("\nSummary Report\n");
     printf("Total student records: %zu\n", list->count);
     if (list->count == 0) {
         printf("No records, so there is nothing more to report.\n");
@@ -62,5 +62,4 @@ void print_summary_report(const StudentList *list)
     printf("\nCustom analysis - Academic Risk Index\n");
     RiskSummary summary = risk_summarise(list);
     print_risk_totals(&summary);
-    printf("==========================\n");
 }

@@ -26,7 +26,7 @@ static const struct {
 void run_menu(StudentList *list)
 {
     for (;;) {
-        printf("\n========== Menu ==========\n");
+        printf("\nMenu\n");
         for (int i = 0; i < MENU_SIZE; i++)
             printf("%2d. %s\n", i + 1, MENU[i].label);
 

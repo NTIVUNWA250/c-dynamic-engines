@@ -5,8 +5,6 @@
 void print_table_header(void)
 {
     printf("%-7s %-26s %-22s %6s\n", "ID", "Name", "Course", "Grade");
-    printf("%-7s %-26s %-22s %6s\n", "-------", "--------------------------",
-           "----------------------", "------");
 }
 
 void print_student_row(const Student *student)
