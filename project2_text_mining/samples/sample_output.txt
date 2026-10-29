@@ -1,0 +1,928 @@
+Student ID: NTIVUNWA250
+Project: Dynamic Text Mining and Linguistic Pattern Analyzer
+Source: From an African Oral Tale to an English Picture Book: Rwandan Teachers' Experience with Online Translation of South African Institute of Distance Education's African Storybooks
+Details: Epimaque Niyibizi, Emmanuel Sibomana, Aloysie Uwizeyemariya, Sylvestre Ntabajyana and Cyprien Niyomugabo (University of Rwanda - College of Education). Teacher Education through Flexible Learning in Africa, Vol 1 No 1, 2019. Abstract. DOI 10.35293/tetfle.v1i1.66. Licence: CC BY 4.0
+Custom Analysis: Lexical Diversity Score
+Loaded the built-in paragraph: 328 words, 167 distinct.
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 2
+Total words: 328
+Distinct words: 167
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 3
+Longest word: "rwanda-college" (14 characters)
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 4
+Most frequent word: "the", 18 times (5.5% of all words)
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 6
+1. Alphabetically (a to z)
+2. By frequency (most frequent first)
+Sort: 2
+Word statistics sorted By frequency (most frequent first).
+#     Word                                     Count
+1     the                                         18
+2     and                                         15
+3     in                                          15
+4     of                                          12
+5     african                                     11
+6     to                                           8
+7     languages                                    7
+8     reading                                      7
+9     a                                            6
+10    kinyarwanda                                  5
+11    on                                           5
+12    translated                                   5
+13    stories                                      4
+14    between                                      3
+15    children                                     3
+16    education                                    3
+17    english                                      3
+18    for                                          3
+19    from                                         3
+20    is                                           3
+21    original                                     3
+22    storybook                                    3
+23    storybooks                                   3
+24    versions                                     3
+25    website                                      3
+26    were                                         3
+27    are                                          2
+28    as                                           2
+29    challenge                                    2
+30    differences                                  2
+31    distance                                     2
+32    during                                       2
+33    early                                        2
+34    educators                                    2
+35    enjoyable                                    2
+36    grade                                        2
+37    levels                                       2
+38    more                                         2
+39    observed                                     2
+40    online                                       2
+41    other                                        2
+42    paper                                        2
+43    participants                                 2
+44    shortage                                     2
+45    skills                                       2
+46    some                                         2
+47    teacher                                      2
+48    teachers                                     2
+49    than                                         2
+50    that                                         2
+51    their                                        2
+52    there                                        2
+53    this                                         2
+54    translation                                  2
+55    which                                        2
+56    workshop                                     2
+57    100                                          1
+58    32                                           1
+59    ability                                      1
+60    activities                                   1
+61    adaptation                                   1
+62    adapting                                     1
+63    addressing                                   1
+64    africa                                       1
+65    agglutinating                                1
+66    agglutinative                                1
+67    all                                          1
+68    although                                     1
+69    available                                    1
+70    based                                        1
+71    bear                                         1
+72    by                                           1
+73    can                                          1
+74    care                                         1
+75    challenges                                   1
+76    clashes                                      1
+77    collected                                    1
+78    contexts                                     1
+79    contributes                                  1
+80    created                                      1
+81    critical                                     1
+82    cultural                                     1
+83    data                                         1
+84    determining                                  1
+85    development                                  1
+86    digital                                      1
+87    education's                                  1
+88    encountered                                  1
+89    experiences                                  1
+90    features                                     1
+91    filled                                       1
+92    finding                                      1
+93    findings                                     1
+94    firstly                                      1
+95    folktales                                    1
+96    foreignization                               1
+97    found                                        1
+98    graded                                       1
+99    have                                         1
+100   high                                         1
+101   implications                                 1
+102   initiative                                   1
+103   institute                                    1
+104   interventions                                1
+105   interviewed                                  1
+106   into                                         1
+107   investigating                                1
+108   it                                           1
+109   key                                          1
+110   lack                                         1
+111   language                                     1
+112   length                                       1
+113   lesson                                       1
+114   level                                        1
+115   literacy                                     1
+116   maintain                                     1
+117   make                                         1
+118   materials                                    1
+119   meaning                                      1
+120   mind                                         1
+121   moral                                        1
+122   offered                                      1
+123   opportunities                                1
+124   participated                                 1
+125   partnership                                  1
+126   pertaining                                   1
+127   picture                                      1
+128   point                                        1
+129   practice                                     1
+130   process                                      1
+131   provides                                     1
+132   published                                    1
+133   questionnaire                                1
+134   readers                                      1
+135   recommends                                   1
+136   reflecting                                   1
+137   reinforcing                                  1
+138   requires                                     1
+139   research                                     1
+140   researchers                                  1
+141   revealed                                     1
+142   rwanda                                       1
+143   rwanda-college                               1
+144   rwandan                                      1
+145   saide                                        1
+146   schools                                      1
+147   since                                        1
+148   south                                        1
+149   special                                      1
+150   specificity                                  1
+151   story                                        1
+152   such                                         1
+153   support                                      1
+154   tale                                         1
+155   teaching                                     1
+156   ten                                          1
+157   them                                         1
+158   then                                         1
+159   they                                         1
+160   thinking                                     1
+161   translating                                  1
+162   translators                                  1
+163   university                                   1
+164   well                                         1
+165   who                                          1
+166   with                                         1
+167   written                                      1
+167 distinct words, 328 words in total.
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 6
+1. Alphabetically (a to z)
+2. By frequency (most frequent first)
+Sort: 1
+Word statistics sorted Alphabetically (a to z).
+#     Word                                     Count
+1     100                                          1
+2     32                                           1
+3     a                                            6
+4     ability                                      1
+5     activities                                   1
+6     adaptation                                   1
+7     adapting                                     1
+8     addressing                                   1
+9     africa                                       1
+10    african                                     11
+11    agglutinating                                1
+12    agglutinative                                1
+13    all                                          1
+14    although                                     1
+15    and                                         15
+16    are                                          2
+17    as                                           2
+18    available                                    1
+19    based                                        1
+20    bear                                         1
+21    between                                      3
+22    by                                           1
+23    can                                          1
+24    care                                         1
+25    challenge                                    2
+26    challenges                                   1
+27    children                                     3
+28    clashes                                      1
+29    collected                                    1
+30    contexts                                     1
+31    contributes                                  1
+32    created                                      1
+33    critical                                     1
+34    cultural                                     1
+35    data                                         1
+36    determining                                  1
+37    development                                  1
+38    differences                                  2
+39    digital                                      1
+40    distance                                     2
+41    during                                       2
+42    early                                        2
+43    education                                    3
+44    education's                                  1
+45    educators                                    2
+46    encountered                                  1
+47    english                                      3
+48    enjoyable                                    2
+49    experiences                                  1
+50    features                                     1
+51    filled                                       1
+52    finding                                      1
+53    findings                                     1
+54    firstly                                      1
+55    folktales                                    1
+56    for                                          3
+57    foreignization                               1
+58    found                                        1
+59    from                                         3
+60    grade                                        2
+61    graded                                       1
+62    have                                         1
+63    high                                         1
+64    implications                                 1
+65    in                                          15
+66    initiative                                   1
+67    institute                                    1
+68    interventions                                1
+69    interviewed                                  1
+70    into                                         1
+71    investigating                                1
+72    is                                           3
+73    it                                           1
+74    key                                          1
+75    kinyarwanda                                  5
+76    lack                                         1
+77    language                                     1
+78    languages                                    7
+79    length                                       1
+80    lesson                                       1
+81    level                                        1
+82    levels                                       2
+83    literacy                                     1
+84    maintain                                     1
+85    make                                         1
+86    materials                                    1
+87    meaning                                      1
+88    mind                                         1
+89    moral                                        1
+90    more                                         2
+91    observed                                     2
+92    of                                          12
+93    offered                                      1
+94    on                                           5
+95    online                                       2
+96    opportunities                                1
+97    original                                     3
+98    other                                        2
+99    paper                                        2
+100   participants                                 2
+101   participated                                 1
+102   partnership                                  1
+103   pertaining                                   1
+104   picture                                      1
+105   point                                        1
+106   practice                                     1
+107   process                                      1
+108   provides                                     1
+109   published                                    1
+110   questionnaire                                1
+111   readers                                      1
+112   reading                                      7
+113   recommends                                   1
+114   reflecting                                   1
+115   reinforcing                                  1
+116   requires                                     1
+117   research                                     1
+118   researchers                                  1
+119   revealed                                     1
+120   rwanda                                       1
+121   rwanda-college                               1
+122   rwandan                                      1
+123   saide                                        1
+124   schools                                      1
+125   shortage                                     2
+126   since                                        1
+127   skills                                       2
+128   some                                         2
+129   south                                        1
+130   special                                      1
+131   specificity                                  1
+132   stories                                      4
+133   story                                        1
+134   storybook                                    3
+135   storybooks                                   3
+136   such                                         1
+137   support                                      1
+138   tale                                         1
+139   teacher                                      2
+140   teachers                                     2
+141   teaching                                     1
+142   ten                                          1
+143   than                                         2
+144   that                                         2
+145   the                                         18
+146   their                                        2
+147   them                                         1
+148   then                                         1
+149   there                                        2
+150   they                                         1
+151   thinking                                     1
+152   this                                         2
+153   to                                           8
+154   translated                                   5
+155   translating                                  1
+156   translation                                  2
+157   translators                                  1
+158   university                                   1
+159   versions                                     3
+160   website                                      3
+161   well                                         1
+162   were                                         3
+163   which                                        2
+164   who                                          1
+165   with                                         1
+166   workshop                                     2
+167   written                                      1
+167 distinct words, 328 words in total.
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 5
+#     Word                                     Count
+1     100                                          1
+2     32                                           1
+3     a                                            6
+4     ability                                      1
+5     activities                                   1
+6     adaptation                                   1
+7     adapting                                     1
+8     addressing                                   1
+9     africa                                       1
+10    african                                     11
+11    agglutinating                                1
+12    agglutinative                                1
+13    all                                          1
+14    although                                     1
+15    and                                         15
+16    are                                          2
+17    as                                           2
+18    available                                    1
+19    based                                        1
+20    bear                                         1
+21    between                                      3
+22    by                                           1
+23    can                                          1
+24    care                                         1
+25    challenge                                    2
+26    challenges                                   1
+27    children                                     3
+28    clashes                                      1
+29    collected                                    1
+30    contexts                                     1
+31    contributes                                  1
+32    created                                      1
+33    critical                                     1
+34    cultural                                     1
+35    data                                         1
+36    determining                                  1
+37    development                                  1
+38    differences                                  2
+39    digital                                      1
+40    distance                                     2
+41    during                                       2
+42    early                                        2
+43    education                                    3
+44    education's                                  1
+45    educators                                    2
+46    encountered                                  1
+47    english                                      3
+48    enjoyable                                    2
+49    experiences                                  1
+50    features                                     1
+51    filled                                       1
+52    finding                                      1
+53    findings                                     1
+54    firstly                                      1
+55    folktales                                    1
+56    for                                          3
+57    foreignization                               1
+58    found                                        1
+59    from                                         3
+60    grade                                        2
+61    graded                                       1
+62    have                                         1
+63    high                                         1
+64    implications                                 1
+65    in                                          15
+66    initiative                                   1
+67    institute                                    1
+68    interventions                                1
+69    interviewed                                  1
+70    into                                         1
+71    investigating                                1
+72    is                                           3
+73    it                                           1
+74    key                                          1
+75    kinyarwanda                                  5
+76    lack                                         1
+77    language                                     1
+78    languages                                    7
+79    length                                       1
+80    lesson                                       1
+81    level                                        1
+82    levels                                       2
+83    literacy                                     1
+84    maintain                                     1
+85    make                                         1
+86    materials                                    1
+87    meaning                                      1
+88    mind                                         1
+89    moral                                        1
+90    more                                         2
+91    observed                                     2
+92    of                                          12
+93    offered                                      1
+94    on                                           5
+95    online                                       2
+96    opportunities                                1
+97    original                                     3
+98    other                                        2
+99    paper                                        2
+100   participants                                 2
+101   participated                                 1
+102   partnership                                  1
+103   pertaining                                   1
+104   picture                                      1
+105   point                                        1
+106   practice                                     1
+107   process                                      1
+108   provides                                     1
+109   published                                    1
+110   questionnaire                                1
+111   readers                                      1
+112   reading                                      7
+113   recommends                                   1
+114   reflecting                                   1
+115   reinforcing                                  1
+116   requires                                     1
+117   research                                     1
+118   researchers                                  1
+119   revealed                                     1
+120   rwanda                                       1
+121   rwanda-college                               1
+122   rwandan                                      1
+123   saide                                        1
+124   schools                                      1
+125   shortage                                     2
+126   since                                        1
+127   skills                                       2
+128   some                                         2
+129   south                                        1
+130   special                                      1
+131   specificity                                  1
+132   stories                                      4
+133   story                                        1
+134   storybook                                    3
+135   storybooks                                   3
+136   such                                         1
+137   support                                      1
+138   tale                                         1
+139   teacher                                      2
+140   teachers                                     2
+141   teaching                                     1
+142   ten                                          1
+143   than                                         2
+144   that                                         2
+145   the                                         18
+146   their                                        2
+147   them                                         1
+148   then                                         1
+149   there                                        2
+150   they                                         1
+151   thinking                                     1
+152   this                                         2
+153   to                                           8
+154   translated                                   5
+155   translating                                  1
+156   translation                                  2
+157   translators                                  1
+158   university                                   1
+159   versions                                     3
+160   website                                      3
+161   well                                         1
+162   were                                         3
+163   which                                        2
+164   who                                          1
+165   with                                         1
+166   workshop                                     2
+167   written                                      1
+167 distinct words, 328 words in total.
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 7
+Word to search for: Moby
+"moby" does not appear in the text.
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 7
+Word to search for: Kinyarwanda
+"kinyarwanda" appears 5 time(s) (1.5% of all words).
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 7
+Word to search for: !!!
+"!!!" contains no letters or digits.
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 8
+
+Text Summary
+Source: From an African Oral Tale to an English Picture Book: Rwandan Teachers' Experience with Online Translation of South African Institute of Distance Education's African Storybooks
+Details: Epimaque Niyibizi, Emmanuel Sibomana, Aloysie Uwizeyemariya, Sylvestre Ntabajyana and Cyprien Niyomugabo (University of Rwanda - College of Education). Teacher Education through Flexible Learning in Africa, Vol 1 No 1, 2019. Abstract. DOI 10.35293/tetfle.v1i1.66. Licence: CC BY 4.0
+Characters: 2333
+Total words: 328
+Distinct words: 167
+Average word length: 6.04 letters
+Longest word: "rwanda-college" (14 characters)
+Most frequent word: "the" (18 times)
+Words truncated to 39 characters: 0
+Custom analysis - Lexical Diversity Score: 50.9 / 100, Moderate
+  Content-word diversity: 65.5, words used once: 111 (66.5% of distinct)
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 9
+
+Custom analysis: Lexical Diversity Score:
+Score = 100 x distinct words / total words
+Distinct / total: 167 / 328
+Lexical Diversity Score: 50.9 / 100 -> Moderate
+Words used exactly once (hapax): 111 = 66.5% of distinct words
+Content words (stop words such as "the", "and" removed): 144 distinct / 220 total
+Content-word diversity: 65.5 / 100
+Bands: below 40 Low (repetitive), 40 to 59.9 Moderate, 60+ High (varied).
+Reading: the repetition comes mostly from small function words; the meaningful vocabulary is more varied than the raw score suggests.
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 10
+
+Memory Inspection
+Text buffer address:       0x5b6d2dd1b5c0
+  heap block holding the paragraph: 2333 chars used of 4096 bytes reserved
+Word statistics array:     0x5b6d2dd1c5d0
+  heap block of struct wordStat: 167 used of 256 reserved, 44 bytes each
+Selected word-stat entry:  0x5b6d2dd1de90
+  entry [144] "the" (the most frequent word) = array + 144 x 44 bytes
+  its name field: 0x5b6d2dd1de90, its count field: 0x5b6d2dd1deb8
+Context structure (stack): 0x7fff5285a1e0
+Addresses change from run to run; heap blocks may move after realloc.
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 1
+Source title: Punctuation Test
+Author and publication details: Written for this project to test the word rules
+Paste or type the paragraph. Press Enter on an empty line to finish.
+(read 741 characters)
+Loaded "Punctuation Test": 119 words, 15 distinct.
+Note: this text has fewer than 150 words.
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 2
+Total words: 119
+Distinct words: 15
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 8
+
+Text Summary
+Source: Punctuation Test
+Details: Written for this project to test the word rules
+Characters: 741
+Total words: 119
+Distinct words: 15
+Average word length: 5.13 letters
+Longest word: "pneumonoultramicroscopicsilicovolcanoco" (45 characters)
+Most frequent word: "again" (100 times)
+Words truncated to 39 characters: 1
+Custom analysis - Lexical Diversity Score: 12.6 / 100, Low (repetitive)
+  Content-word diversity: 9.8, words used once: 11 (73.3% of distinct)
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 10
+
+Memory Inspection
+Text buffer address:       0x5b6d2dd21200
+  heap block holding the paragraph: 741 chars used of 1024 bytes reserved
+Word statistics array:     0x5b6d2dd21610
+  heap block of struct wordStat: 15 used of 16 reserved, 44 bytes each
+Selected word-stat entry:  0x5b6d2dd21878
+  entry [14] "again" (the most frequent word) = array + 14 x 44 bytes
+  its name field: 0x5b6d2dd21878, its count field: 0x5b6d2dd218a0
+Context structure (stack): 0x7fff5285a1e0
+Addresses change from run to run; heap blocks may move after realloc.
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 5
+#     Word                                     Count
+1     the                                          4
+2     well-known                                   1
+3     cat's                                        1
+4     toy                                          1
+5     a                                            1
+6     red                                          1
+7     ball                                         2
+8     rolled                                       1
+9     cat                                          2
+10    and                                          1
+11    dog's                                        1
+12    pneumonoultramicroscopicsilicovolcanoco      1
+13    is                                           1
+14    long                                         1
+15    again                                      100
+15 distinct words, 119 words in total.
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 1
+Source title: Empty Test
+Author and publication details: No text
+Paste or type the paragraph. Press Enter on an empty line to finish.
+(read 0 characters)
+Empty text, keeping the previous paragraph.
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 11
+
+Source: Punctuation Test
+Details: Written for this project to test the word rules
+
+The well-known cat's toy--a RED ball--rolled; the cat, the CAT, and the dog's ball!!!
+Pneumonoultramicroscopicsilicovolcanoconiosis is long.
+again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again
+
+
+Menu
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 12
+All memory released. Goodbye.

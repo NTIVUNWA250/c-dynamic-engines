@@ -1,0 +1,34 @@
+2
+3
+4
+6
+2
+6
+1
+5
+7
+Moby
+7
+Kinyarwanda
+7
+!!!
+8
+9
+10
+1
+Punctuation Test
+Written for this project to test the word rules
+The well-known cat's toy--a RED ball--rolled; the cat, the CAT, and the dog's ball!!!
+Pneumonoultramicroscopicsilicovolcanoconiosis is long.
+again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again
+
+2
+8
+10
+5
+1
+Empty Test
+No text
+
+11
+12
