@@ -7,7 +7,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Copies the built-in paragraph into a heap buffer and analyses it.
 static int load_sample(TextAnalysis *ctx)
 {
     TextBuffer sample;
@@ -40,7 +39,6 @@ int main(void)
 
     run_menu(&ctx);
 
-    // Release the text buffer and word-statistics array before leaving.
     analysis_free(&ctx);
     printf("All memory released. Goodbye.\n");
     return EXIT_SUCCESS;

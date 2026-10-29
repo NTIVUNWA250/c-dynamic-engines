@@ -28,14 +28,12 @@ void table_free(WordTable *table)
 
 WordStat *table_find(const WordTable *table, const char *word)
 {
-    // Pointer traversal over the entries, comparing names with strcmp.
     for (WordStat *p = table->items, *end = table->items + table->count; p < end; p++)
         if (strcmp(p->name, word) == 0)
             return p;
     return NULL;
 }
 
-// Updates the whole-text totals for one occurrence.
 static void record_totals(WordTable *table, const char *word, const WordInfo *info)
 {
     table->total_words++;
@@ -44,13 +42,12 @@ static void record_totals(WordTable *table, const char *word, const WordInfo *in
         table->truncated_words++;
     if (info->length > table->longest_length) {
         table->longest_length = info->length;
-        strcpy(table->longest, word); // safe: word is at most WORD_MAX_LEN characters
+        strcpy(table->longest, word);
     }
 }
 
 int table_add(WordTable *table, const char *word, const WordInfo *info)
 {
-    // strlen check first, so strcpy below can never write past name[40].
     if (strlen(word) > WORD_MAX_LEN)
         return 0;
 
@@ -61,7 +58,6 @@ int table_add(WordTable *table, const char *word, const WordInfo *info)
         return 1;
     }
 
-    // New word: double the array when it is full.
     if (table->count == table->capacity) {
         size_t new_capacity = table->capacity < MIN_CAPACITY ? MIN_CAPACITY : table->capacity * 2;
         WordStat *grown = realloc(table->items, new_capacity * sizeof *grown);
@@ -75,7 +71,7 @@ int table_add(WordTable *table, const char *word, const WordInfo *info)
     }
 
     WordStat *slot = table->items + table->count;
-    strcpy(slot->name, word); // safe: checked against WORD_MAX_LEN above
+    strcpy(slot->name, word);
     slot->count = 1;
     table->count++;
     record_totals(table, word, info);
@@ -84,7 +80,6 @@ int table_add(WordTable *table, const char *word, const WordInfo *info)
 
 int table_build(WordTable *table, const char *text)
 {
-    // Clear the old results but keep the allocated entries for reuse.
     WordStat *items = table->items;
     size_t capacity = table->capacity;
     memset(table, 0, sizeof *table);

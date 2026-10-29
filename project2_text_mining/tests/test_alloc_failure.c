@@ -4,10 +4,8 @@
 
 #include <string.h>
 
-// When malloc/calloc/realloc fail, nothing crashes and old results are kept.
 int main(void)
 {
-    // Text buffer: init fails cleanly, a failed append keeps the old text.
     TextBuffer buf;
     test_alloc_fail_after(0);
     CHECK(!textbuf_init(&buf, 0));
@@ -21,7 +19,6 @@ int main(void)
     CHECK(strcmp(buf.data, "keep me") == 0);
     textbuf_free(&buf);
 
-    // Word table: a failed realloc while adding new words is reported.
     WordTable table;
     CHECK(table_init(&table, 0));
     char text[400] = "";
@@ -33,7 +30,6 @@ int main(void)
     CHECK(!table_build(&table, text));
     table_free(&table);
 
-    // Context: replacing the text fails, and the previous text and results survive.
     TextAnalysis ctx;
     CHECK(analysis_init(&ctx));
     TextBuffer first;
@@ -44,7 +40,7 @@ int main(void)
     TextBuffer second;
     textbuf_init(&second, 0);
     textbuf_append(&second, "three", 5);
-    test_alloc_fail_after(0); // the new word table cannot be allocated
+    test_alloc_fail_after(0);
     CHECK(!analysis_replace_text(&ctx, &second, "Second", "test"));
     CHECK(strcmp(ctx.source_title, "First") == 0);
     CHECK(ctx.table.total_words == 3);

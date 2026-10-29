@@ -26,7 +26,6 @@ int textbuf_append(TextBuffer *buf, const char *text, size_t n)
 {
     size_t needed = buf->length + n + 1;
     if (needed > buf->capacity) {
-        // Double until it fits, so long pasted text needs few reallocations.
         size_t new_capacity = buf->capacity < MIN_CAPACITY ? MIN_CAPACITY : buf->capacity;
         while (new_capacity < needed)
             new_capacity *= 2;

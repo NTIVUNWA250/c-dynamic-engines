@@ -41,14 +41,12 @@ void display_word_statistics(TextAnalysis *ctx)
     }
     printf("%-5s %-40s %5s\n", "#", "Word", "Count");
     int row = 1;
-    // Pointer traversal over the word-statistics array.
     for (const WordStat *p = ctx->table.items, *end = p + ctx->table.count; p < end; p++)
         printf("%-5d %-40s %5d\n", row++, p->name, p->count);
     printf("%zu distinct words, %zu words in total.\n", ctx->table.count,
            ctx->table.total_words);
 }
 
-// Sort choices, each paired with its comparison function.
 static const struct {
     const char *label;
     WordCompare compare;
@@ -76,7 +74,6 @@ void search_word(TextAnalysis *ctx)
     if (!read_text("Word to search for: ", query, sizeof query))
         return;
 
-    // Normalise the query with the same rules as the text, so "Whale," finds "whale".
     char word[WORD_MAX_LEN + 1];
     WordInfo info;
     const char *cursor = query;

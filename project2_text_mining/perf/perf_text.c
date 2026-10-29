@@ -7,7 +7,7 @@
 #include <string.h>
 #include <time.h>
 
-#define COPIES 1000 // about 200,000 words of text
+#define COPIES 1000
 #define BUDGET_SECONDS 1.0
 
 static double seconds_since(clock_t start)
@@ -15,7 +15,6 @@ static double seconds_since(clock_t start)
     return (double)(clock() - start) / CLOCKS_PER_SEC;
 }
 
-// Times one step and fails the check if it goes over the budget.
 #define TIMED(label, code)                                     \
     do {                                                       \
         clock_t start_ = clock();                              \
@@ -25,7 +24,6 @@ static double seconds_since(clock_t start)
         CHECK(took_ < BUDGET_SECONDS);                         \
     } while (0)
 
-// Large-input timing: growing the text, counting words, sorting and scoring.
 int main(void)
 {
     TextBuffer text;

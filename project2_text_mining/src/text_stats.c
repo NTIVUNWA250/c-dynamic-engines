@@ -43,7 +43,6 @@ double average_word_length(const WordTable *table)
     return (double)table->total_letters / (double)table->total_words;
 }
 
-// Common English function words, which carry little meaning on their own.
 static const char *STOP_WORDS[] = {
     "a",    "about", "all",  "an",   "and",   "are",  "as",    "at",   "be",   "but",
     "by",   "do",    "for",  "from", "had",   "has",  "have",  "he",   "her",  "his",

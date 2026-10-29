@@ -47,7 +47,6 @@ void memory_inspection(TextAnalysis *ctx)
         printf("No word entries to inspect.\n");
         return;
     }
-    // Pointer subtraction gives the entry's position in the array.
     ptrdiff_t index = selected - t->items;
     printf("Selected word-stat entry:  %p\n", (void *)selected);
     printf("  entry [%td] \"%s\" (the most frequent word) = array + %td x %zu bytes\n", index,

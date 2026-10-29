@@ -1,6 +1,5 @@
 #include "sample_text.h"
 
-// Public-domain text (1851). Em dashes are written as "--" to keep the source ASCII.
 const char SAMPLE_TITLE[] = "Moby-Dick; or, The Whale";
 const char SAMPLE_DETAILS[] =
     "Herman Melville, 1851. Chapter 1, \"Loomings\", opening paragraph (public domain)";

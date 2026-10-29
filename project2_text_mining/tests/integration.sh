@@ -1,6 +1,4 @@
 #!/bin/sh
-# Runs a scripted session (samples/demo_input.txt) through the program and checks the output.
-# Usage: sh tests/integration.sh <program>
 APP="${1:-bin/text_analyzer}"
 OUT="bin/integration_output.txt"
 
@@ -22,7 +20,6 @@ expect() {
     fi
 }
 
-# Built-in paragraph.
 expect "Project: Dynamic Text Mining and Linguistic Pattern Analyzer"
 expect "Source: Moby-Dick; or, The Whale"
 expect "Loaded the built-in paragraph: 201 words, 134 distinct."
@@ -38,7 +35,6 @@ expect "Text buffer address:"
 expect "Word statistics array:"
 expect "Selected word-stat entry:"
 
-# Pasted paragraph: punctuation, repeated words, a long word and a 599-character line.
 expect "(read 741 characters)"
 expect "Loaded \"Punctuation Test\": 119 words, 15 distinct."
 expect "Note: this text has fewer than 150 words."
@@ -46,12 +42,10 @@ expect "Most frequent word: \"again\" (100 times)"
 expect "Words truncated to 39 characters: 1"
 expect "Longest word: \"pneumonoultramicroscopicsilicovolcanoco\" (45 characters)"
 
-# Empty paste keeps the previous text.
 expect "Empty text, keeping the previous paragraph."
 expect "Source: Punctuation Test"
 expect "All memory released. Goodbye."
 
-# Word rules: these must be single words in the statistics table.
 for word in "well-known" "cat's" "dog's"; do
     if grep -qE "^[0-9]+ +$word +[0-9]+$" "$OUT"; then
         echo "ok   word kept whole: $word"

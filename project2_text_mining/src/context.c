@@ -19,7 +19,6 @@ int analysis_init(TextAnalysis *ctx)
 int analysis_replace_text(TextAnalysis *ctx, TextBuffer *new_text, const char *title,
                           const char *details)
 {
-    // Build the new word table separately, so a failure leaves the old results intact.
     WordTable fresh;
     if (!table_init(&fresh, 0))
         return 0;
@@ -32,7 +31,6 @@ int analysis_replace_text(TextAnalysis *ctx, TextBuffer *new_text, const char *t
     table_free(&ctx->table);
     ctx->text = *new_text;
     ctx->table = fresh;
-    // The context now owns the text; empty the caller's copy so it is not freed twice.
     new_text->data = NULL;
     new_text->length = 0;
     new_text->capacity = 0;

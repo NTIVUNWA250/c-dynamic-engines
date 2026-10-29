@@ -3,7 +3,6 @@
 
 #include <string.h>
 
-// The text buffer grows as text is appended and always stays '\0'-terminated.
 int main(void)
 {
     TextBuffer buf;
@@ -14,7 +13,6 @@ int main(void)
     CHECK(textbuf_append(&buf, ", world", 7));
     CHECK(strcmp(buf.data, "Hello, world") == 0 && buf.length == 12);
 
-    // Append far more than the starting capacity, one line at a time.
     size_t first_capacity = buf.capacity;
     for (int i = 0; i < 1000; i++)
         CHECK(textbuf_append(&buf, "abcdefghij", 10));
@@ -23,7 +21,6 @@ int main(void)
     CHECK(buf.data[buf.length] == '\0');
     CHECK(strncmp(buf.data + 12, "abcdefghij", 10) == 0);
 
-    // Appending nothing is allowed.
     CHECK(textbuf_append(&buf, "", 0));
 
     textbuf_free(&buf);
