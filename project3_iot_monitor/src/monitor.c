@@ -54,6 +54,6 @@ int monitor_add_alert(Monitor *monitor, const Device *device, double low, double
     alert->expected_high = high;
     snprintf(alert->reason, sizeof alert->reason, "%s", reason);
     alert->callback = callback;
-    log_msg(LOG_WARN, "monitor", "alert on device %d: %s", device->id, reason);
+    log_msg(LOG_INFO, "monitor", "alert on device %d: %s", device->id, reason);
     return 1;
 }
