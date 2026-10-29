@@ -1,0 +1,833 @@
+Student ID: NTIVUNWA250
+Project: Dynamic Text Mining and Linguistic Pattern Analyzer
+Source: Moby-Dick; or, The Whale
+Details: Herman Melville, 1851. Chapter 1, "Loomings", opening paragraph (public domain)
+Custom Analysis: Lexical Diversity Score
+Loaded the built-in paragraph: 201 words, 134 distinct.
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 2
+Total words: 201
+Distinct words: 134
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 3
+Longest word: "involuntarily" (13 characters)
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 4
+Most frequent word: "the", 10 times (5.0% of all words)
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 6
+1. Alphabetically (a to z)
+2. By frequency (most frequent first)
+Sort: 2
+Word statistics sorted By frequency (most frequent first).
+#     Word                                     Count
+1     the                                         10
+2     i                                            9
+3     and                                          7
+4     a                                            5
+5     it                                           5
+6     me                                           5
+7     to                                           5
+8     in                                           4
+9     is                                           4
+10    my                                           4
+11    of                                           4
+12    whenever                                     4
+13    about                                        2
+14    as                                           2
+15    find                                         2
+16    get                                          2
+17    little                                       2
+18    myself                                       2
+19    nothing                                      2
+20    off                                          2
+21    or                                           2
+22    some                                         2
+23    this                                         2
+24    time                                         2
+25    with                                         2
+26    account                                      1
+27    ago                                          1
+28    all                                          1
+29    almost                                       1
+30    an                                           1
+31    ball                                         1
+32    before                                       1
+33    bringing                                     1
+34    but                                          1
+35    call                                         1
+36    can                                          1
+37    cato                                         1
+38    cherish                                      1
+39    circulation                                  1
+40    coffin                                       1
+41    damp                                         1
+42    degree                                       1
+43    deliberately                                 1
+44    driving                                      1
+45    drizzly                                      1
+46    especially                                   1
+47    every                                        1
+48    feelings                                     1
+49    flourish                                     1
+50    for                                          1
+51    from                                         1
+52    funeral                                      1
+53    grim                                         1
+54    growing                                      1
+55    hand                                         1
+56    hats                                         1
+57    have                                         1
+58    having                                       1
+59    high                                         1
+60    himself                                      1
+61    his                                          1
+62    how                                          1
+63    hypos                                        1
+64    if                                           1
+65    interest                                     1
+66    into                                         1
+67    involuntarily                                1
+68    ishmael                                      1
+69    knew                                         1
+70    knocking                                     1
+71    long                                         1
+72    meet                                         1
+73    men                                          1
+74    methodically                                 1
+75    mind                                         1
+76    money                                        1
+77    moral                                        1
+78    mouth                                        1
+79    nearly                                       1
+80    never                                        1
+81    no                                           1
+82    november                                     1
+83    ocean                                        1
+84    on                                           1
+85    other                                        1
+86    part                                         1
+87    particular                                   1
+88    pausing                                      1
+89    people's                                     1
+90    philosophical                                1
+91    pistol                                       1
+92    precisely                                    1
+93    prevent                                      1
+94    principle                                    1
+95    purse                                        1
+96    quietly                                      1
+97    rear                                         1
+98    regulating                                   1
+99    requires                                     1
+100   sail                                         1
+101   same                                         1
+102   sea                                          1
+103   see                                          1
+104   ship                                         1
+105   shore                                        1
+106   soon                                         1
+107   soul                                         1
+108   spleen                                       1
+109   stepping                                     1
+110   street                                       1
+111   strong                                       1
+112   substitute                                   1
+113   such                                         1
+114   surprising                                   1
+115   sword                                        1
+116   take                                         1
+117   that                                         1
+118   their                                        1
+119   then                                         1
+120   there                                        1
+121   they                                         1
+122   thought                                      1
+123   throws                                       1
+124   towards                                      1
+125   up                                           1
+126   upon                                         1
+127   upper                                        1
+128   very                                         1
+129   warehouses                                   1
+130   watery                                       1
+131   way                                          1
+132   world                                        1
+133   would                                        1
+134   years                                        1
+134 distinct words, 201 words in total.
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 6
+1. Alphabetically (a to z)
+2. By frequency (most frequent first)
+Sort: 1
+Word statistics sorted Alphabetically (a to z).
+#     Word                                     Count
+1     a                                            5
+2     about                                        2
+3     account                                      1
+4     ago                                          1
+5     all                                          1
+6     almost                                       1
+7     an                                           1
+8     and                                          7
+9     as                                           2
+10    ball                                         1
+11    before                                       1
+12    bringing                                     1
+13    but                                          1
+14    call                                         1
+15    can                                          1
+16    cato                                         1
+17    cherish                                      1
+18    circulation                                  1
+19    coffin                                       1
+20    damp                                         1
+21    degree                                       1
+22    deliberately                                 1
+23    driving                                      1
+24    drizzly                                      1
+25    especially                                   1
+26    every                                        1
+27    feelings                                     1
+28    find                                         2
+29    flourish                                     1
+30    for                                          1
+31    from                                         1
+32    funeral                                      1
+33    get                                          2
+34    grim                                         1
+35    growing                                      1
+36    hand                                         1
+37    hats                                         1
+38    have                                         1
+39    having                                       1
+40    high                                         1
+41    himself                                      1
+42    his                                          1
+43    how                                          1
+44    hypos                                        1
+45    i                                            9
+46    if                                           1
+47    in                                           4
+48    interest                                     1
+49    into                                         1
+50    involuntarily                                1
+51    is                                           4
+52    ishmael                                      1
+53    it                                           5
+54    knew                                         1
+55    knocking                                     1
+56    little                                       2
+57    long                                         1
+58    me                                           5
+59    meet                                         1
+60    men                                          1
+61    methodically                                 1
+62    mind                                         1
+63    money                                        1
+64    moral                                        1
+65    mouth                                        1
+66    my                                           4
+67    myself                                       2
+68    nearly                                       1
+69    never                                        1
+70    no                                           1
+71    nothing                                      2
+72    november                                     1
+73    ocean                                        1
+74    of                                           4
+75    off                                          2
+76    on                                           1
+77    or                                           2
+78    other                                        1
+79    part                                         1
+80    particular                                   1
+81    pausing                                      1
+82    people's                                     1
+83    philosophical                                1
+84    pistol                                       1
+85    precisely                                    1
+86    prevent                                      1
+87    principle                                    1
+88    purse                                        1
+89    quietly                                      1
+90    rear                                         1
+91    regulating                                   1
+92    requires                                     1
+93    sail                                         1
+94    same                                         1
+95    sea                                          1
+96    see                                          1
+97    ship                                         1
+98    shore                                        1
+99    some                                         2
+100   soon                                         1
+101   soul                                         1
+102   spleen                                       1
+103   stepping                                     1
+104   street                                       1
+105   strong                                       1
+106   substitute                                   1
+107   such                                         1
+108   surprising                                   1
+109   sword                                        1
+110   take                                         1
+111   that                                         1
+112   the                                         10
+113   their                                        1
+114   then                                         1
+115   there                                        1
+116   they                                         1
+117   this                                         2
+118   thought                                      1
+119   throws                                       1
+120   time                                         2
+121   to                                           5
+122   towards                                      1
+123   up                                           1
+124   upon                                         1
+125   upper                                        1
+126   very                                         1
+127   warehouses                                   1
+128   watery                                       1
+129   way                                          1
+130   whenever                                     4
+131   with                                         2
+132   world                                        1
+133   would                                        1
+134   years                                        1
+134 distinct words, 201 words in total.
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 5
+#     Word                                     Count
+1     a                                            5
+2     about                                        2
+3     account                                      1
+4     ago                                          1
+5     all                                          1
+6     almost                                       1
+7     an                                           1
+8     and                                          7
+9     as                                           2
+10    ball                                         1
+11    before                                       1
+12    bringing                                     1
+13    but                                          1
+14    call                                         1
+15    can                                          1
+16    cato                                         1
+17    cherish                                      1
+18    circulation                                  1
+19    coffin                                       1
+20    damp                                         1
+21    degree                                       1
+22    deliberately                                 1
+23    driving                                      1
+24    drizzly                                      1
+25    especially                                   1
+26    every                                        1
+27    feelings                                     1
+28    find                                         2
+29    flourish                                     1
+30    for                                          1
+31    from                                         1
+32    funeral                                      1
+33    get                                          2
+34    grim                                         1
+35    growing                                      1
+36    hand                                         1
+37    hats                                         1
+38    have                                         1
+39    having                                       1
+40    high                                         1
+41    himself                                      1
+42    his                                          1
+43    how                                          1
+44    hypos                                        1
+45    i                                            9
+46    if                                           1
+47    in                                           4
+48    interest                                     1
+49    into                                         1
+50    involuntarily                                1
+51    is                                           4
+52    ishmael                                      1
+53    it                                           5
+54    knew                                         1
+55    knocking                                     1
+56    little                                       2
+57    long                                         1
+58    me                                           5
+59    meet                                         1
+60    men                                          1
+61    methodically                                 1
+62    mind                                         1
+63    money                                        1
+64    moral                                        1
+65    mouth                                        1
+66    my                                           4
+67    myself                                       2
+68    nearly                                       1
+69    never                                        1
+70    no                                           1
+71    nothing                                      2
+72    november                                     1
+73    ocean                                        1
+74    of                                           4
+75    off                                          2
+76    on                                           1
+77    or                                           2
+78    other                                        1
+79    part                                         1
+80    particular                                   1
+81    pausing                                      1
+82    people's                                     1
+83    philosophical                                1
+84    pistol                                       1
+85    precisely                                    1
+86    prevent                                      1
+87    principle                                    1
+88    purse                                        1
+89    quietly                                      1
+90    rear                                         1
+91    regulating                                   1
+92    requires                                     1
+93    sail                                         1
+94    same                                         1
+95    sea                                          1
+96    see                                          1
+97    ship                                         1
+98    shore                                        1
+99    some                                         2
+100   soon                                         1
+101   soul                                         1
+102   spleen                                       1
+103   stepping                                     1
+104   street                                       1
+105   strong                                       1
+106   substitute                                   1
+107   such                                         1
+108   surprising                                   1
+109   sword                                        1
+110   take                                         1
+111   that                                         1
+112   the                                         10
+113   their                                        1
+114   then                                         1
+115   there                                        1
+116   they                                         1
+117   this                                         2
+118   thought                                      1
+119   throws                                       1
+120   time                                         2
+121   to                                           5
+122   towards                                      1
+123   up                                           1
+124   upon                                         1
+125   upper                                        1
+126   very                                         1
+127   warehouses                                   1
+128   watery                                       1
+129   way                                          1
+130   whenever                                     4
+131   with                                         2
+132   world                                        1
+133   would                                        1
+134   years                                        1
+134 distinct words, 201 words in total.
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 7
+Word to search for: Whale
+"whale" does not appear in the text.
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 7
+Word to search for: I
+"i" appears 9 time(s) (4.5% of all words).
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 7
+Word to search for: !!!
+"!!!" contains no letters or digits.
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 8
+
+===== Text Summary =====
+Source: Moby-Dick; or, The Whale
+Details: Herman Melville, 1851. Chapter 1, "Loomings", opening paragraph (public domain)
+Characters: 1110
+Total words: 201
+Distinct words: 134
+Average word length: 4.40 letters
+Longest word: "involuntarily" (13 characters)
+Most frequent word: "the" (10 times)
+Words truncated to 39 characters: 0
+Custom analysis - Lexical Diversity Score: 66.7 / 100, High (varied)
+  Content-word diversity: 90.5, words used once: 109 (81.3% of distinct)
+========================
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 9
+
+-- Custom analysis: Lexical Diversity Score --
+Score = 100 x distinct words / total words
+Distinct / total: 134 / 201
+Lexical Diversity Score: 66.7 / 100 -> High (varied)
+Words used exactly once (hapax): 109 = 81.3% of distinct words
+Content words (stop words such as "the", "and" removed): 105 distinct / 116 total
+Content-word diversity: 90.5 / 100
+Bands: below 40 Low (repetitive), 40 to 59.9 Moderate, 60+ High (varied).
+Reading: the repetition comes mostly from small function words; the meaningful vocabulary is more varied than the raw score suggests.
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 10
+
+Memory Inspection
+--------------------------
+Text buffer address:       0x597abecfc5c0
+  heap block holding the paragraph: 1110 chars used of 2048 bytes reserved
+Word statistics array:     0x597abecfcdd0
+  heap block of struct wordStat: 134 used of 256 reserved, 44 bytes each
+Selected word-stat entry:  0x597abecfe0e4
+  entry [111] "the" (the most frequent word) = array + 111 x 44 bytes
+  its name field: 0x597abecfe0e4, its count field: 0x597abecfe10c
+Context structure (stack): 0x7ffe99319880
+Addresses change from run to run; heap blocks may move after realloc.
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 1
+Source title: Punctuation Test
+Author and publication details: Written for this project to test the word rules
+Paste or type the paragraph. Press Enter on an empty line to finish.
+(read 741 characters)
+Loaded "Punctuation Test": 119 words, 15 distinct.
+Note: this text has fewer than 150 words.
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 2
+Total words: 119
+Distinct words: 15
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 8
+
+===== Text Summary =====
+Source: Punctuation Test
+Details: Written for this project to test the word rules
+Characters: 741
+Total words: 119
+Distinct words: 15
+Average word length: 5.13 letters
+Longest word: "pneumonoultramicroscopicsilicovolcanoco" (45 characters)
+Most frequent word: "again" (100 times)
+Words truncated to 39 characters: 1
+Custom analysis - Lexical Diversity Score: 12.6 / 100, Low (repetitive)
+  Content-word diversity: 9.8, words used once: 11 (73.3% of distinct)
+========================
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 10
+
+Memory Inspection
+--------------------------
+Text buffer address:       0x597abed01a00
+  heap block holding the paragraph: 741 chars used of 1024 bytes reserved
+Word statistics array:     0x597abed01e10
+  heap block of struct wordStat: 15 used of 16 reserved, 44 bytes each
+Selected word-stat entry:  0x597abed02078
+  entry [14] "again" (the most frequent word) = array + 14 x 44 bytes
+  its name field: 0x597abed02078, its count field: 0x597abed020a0
+Context structure (stack): 0x7ffe99319880
+Addresses change from run to run; heap blocks may move after realloc.
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 5
+#     Word                                     Count
+1     the                                          4
+2     well-known                                   1
+3     cat's                                        1
+4     toy                                          1
+5     a                                            1
+6     red                                          1
+7     ball                                         2
+8     rolled                                       1
+9     cat                                          2
+10    and                                          1
+11    dog's                                        1
+12    pneumonoultramicroscopicsilicovolcanoco      1
+13    is                                           1
+14    long                                         1
+15    again                                      100
+15 distinct words, 119 words in total.
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 1
+Source title: Empty Test
+Author and publication details: No text
+Paste or type the paragraph. Press Enter on an empty line to finish.
+(read 0 characters)
+Empty text, keeping the previous paragraph.
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 11
+
+Source: Punctuation Test
+Details: Written for this project to test the word rules
+
+The well-known cat's toy--a RED ball--rolled; the cat, the CAT, and the dog's ball!!!
+Pneumonoultramicroscopicsilicovolcanoconiosis is long.
+again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again again
+
+
+========== Menu ==========
+ 1. Enter or paste a new paragraph
+ 2. Count words
+ 3. Longest word
+ 4. Most frequent word
+ 5. Display word statistics
+ 6. Sort word statistics
+ 7. Search for a word
+ 8. Text summary
+ 9. Custom analysis: Lexical Diversity Score
+10. Memory inspection
+11. Show the current paragraph and source
+12. Exit
+Choose an option: 12
+All memory released. Goodbye.
